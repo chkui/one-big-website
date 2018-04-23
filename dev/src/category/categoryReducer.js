@@ -4,10 +4,10 @@
  * @param action
  * @returns {*}
  */
-export const categoryTypeListReducer = (state = {list: false}, action) => {
+export const categoryTypeListReducer = (state = {listInfo: {list:false, type:false}}, action) => {
     switch (action.type) {
         case 'categoryTypeList':
-            return {list: action.list}
+            return {listInfo: action.listInfo}
         default:
             return state;
     }

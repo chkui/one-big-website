@@ -4,23 +4,23 @@ import {flow} from "../common/flow";
 
 export const categoryTypeListAction = (type) => ({
     type: 'categoryTypeList',
-    list: flow(type)
+    listInfo: flow(type)
         .then((type) => categoryStructure[type])
         .then((structures) => {
-            const List = [];
+            const list = [];
             for (let key in structures) {
                 const item = structures[key];
                 item.key = key;
-                List.push({
+                list.push({
                     url: item.url,
                     subject: item.subject,
                     category: item.category,
                     categoryName: item.categoryName,
-                    des:item.des
+                    des: item.des
                 })
             }
-            return List;
-        }).else()
+            return {list, type};
+        }).else({list:false, type})
 });
 export const loadCategoryAction = (categoryType, showType) => {
     return dispatch => {

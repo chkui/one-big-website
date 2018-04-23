@@ -10,7 +10,7 @@ const cn = require('classnames/bind').bind(require('./category.scss'))
 
 const Category = connect(
     (state) => ({
-        list: state.categoryTypeListReducer.list
+        listInfo: state.categoryTypeListReducer.listInfo
     }),
     (dispatch, props) => ({
         onCategory: type => dispatch(loadCategoryAction(type, ShowType.BREADCRUMBTOP))
@@ -21,14 +21,16 @@ const Category = connect(
     }
 
     componentDidMount() {
-        const props = this.props;
-        !props.list && (() => {
-            props.onCategory(props.match.params.type)
-        })();
+        const props = this.props,
+            listInfo = props.listInfo,
+            list = listInfo.list,
+            type = listInfo.type,
+            matchType = props.match.params.type;
+        (!list || (type && type !== matchType)) &&  props.onCategory(matchType);
     }
 
     render() {
-        const list = this.props.list;
+        const list = this.props.listInfo.list;
         return (<Page disableHeaderShow>
             {list && (0 < list.length ? list.map(item => <BigListCard key={item.url} {...item} />) : (<EmptyInfo/>))}
         </Page>)

@@ -6,7 +6,7 @@ import {ShowType} from './headerReducer'
 import {headerScrollAction} from './headerAction'
 import Breadcrumb from '../components/breadcrumb'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-
+import Tag from '../components/tag'
 const cn = require('classnames/bind').bind(require('./header.scss'))
 
 const Header = connect(
@@ -56,10 +56,7 @@ const Header = connect(
                         <div className={cn('annotation', ShowScroll[props.showType])}>
                             <header className={cn('header')}>
                                 <div className={cn('header-left')}>
-                                    {icon && ('img' === icon.type ? (
-                                            <img className={cn('icon-img')} src={icon.img}/>) :
-                                        (<span {...style}><FontAwesomeIcon icon={icon.img}/></span>))}
-                                    { 2 < props.showType && (<span>&nbsp;</span>)}
+                                    {icon && getImg(style, icon.type, icon.img)}
                                 </div>
                                 <div className={cn('header-right')}>
                                     <Nav/>
@@ -73,6 +70,18 @@ const Header = connect(
         }
     }
 ))
+
+const getImg = (style, type, img) => {
+    switch (type){
+        case 'icon':
+            return (<Tag.Icon className={cn('icon-img')} src={img}/>)
+        case 'font':
+            return (<span {...style}><FontAwesomeIcon icon={img}/></span>)
+        case 'img':
+        default:
+            return (<img className={cn('icon-img')} src={img}/>);
+    }
+}
 
 const ShowScroll = ['none',
     'top',
