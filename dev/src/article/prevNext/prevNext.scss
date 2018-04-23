@@ -1,0 +1,22 @@
+.prev-next{
+  padding: .5rem 1rem;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+.left{
+  text-align: left;
+  width: 50%;
+}
+.right{
+  text-align: right;
+  width: 50%;
+}
+.link{
+  font-size: .7rem;
+  color: #74818D;
+  transition: color 500ms ease;
+  &:hover{
+    color: #000;
+    transition: color 500ms ease;
+  }
+}

@@ -1,0 +1,56 @@
+.history-info{
+  padding: 3rem 5rem;
+  text-align: left;
+  width: 100%;
+}
+.header{
+  font-size: 1.5rem;
+}
+.info{
+  margin: 1rem 0;
+  color: #7f7f7f;
+}
+.h3{
+  margin-bottom: .5rem;
+  font-size: .8rem;
+  font-weight: 500;
+  color: #7f7f7f;
+}
+.history{
+  list-style: none;
+  width: 100%;
+}
+.row{
+  margin: .2rem 0;
+}
+.link{
+  color: #74818D;
+  font-size: .7rem;
+  transition: color 500ms ease;
+  .line {
+    width: 0;
+    height: .1rem;
+    background-color: #6495ed;
+    transition: width 0.125s linear;
+  }
+  &:hover{
+    color: #000;
+    transition: color 500ms ease;
+    .line {
+      width: 20%;
+      transition: width 0.125s linear;
+    }
+  }
+}
+.icon{
+  margin-right: .5rem;
+}
+.page{
+  width:50%;
+}
+.time{
+  width:25%;
+}
+.duration{
+  width:25%;
+}

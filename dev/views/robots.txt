@@ -1,0 +1,13 @@
+# robots.txt for http://www.chkui.com
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /images/
+
+User-agent: Googlebot
+Disallow: /*/*/feed/
+Disallow: /*/*/trackback/
+
+User-Agent: Yahoo! Slurp
+Disallow: /*/*/feed/
+Disallow: /*/*/trackback/

@@ -1,0 +1,29 @@
+.related{
+  margin: 1rem 0 3rem 0;
+  padding: 0 1rem;
+}
+.title{
+  text-align: left;
+  color: #74818D;
+  font-size: .7rem;
+  font-weight: 500;
+}
+.ul{
+  list-style: none;
+  text-align: left;
+}
+.li{
+  display: inline-block;
+  padding-right: 2rem;
+  margin: .5rem 0;
+  font-size: .7rem;
+}
+.link{
+  cursor: pointer;
+  color: #74818D;
+  transition: color 500ms ease;
+  &:hover{
+    color: #000;
+    transition: color 500ms ease;
+  }
+}

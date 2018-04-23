@@ -1,0 +1,63 @@
+.about{
+  padding: 58px 98px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.h1{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.h2{
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #7f7f7f;
+}
+.contact{
+}
+.ul{
+  list-style: none;
+  margin: 2rem 0;
+}
+.li{
+  margin: 1rem 0;
+}
+.li-hide{
+  opacity: 0;
+  visibility: hidden;
+  transition: all 500ms ease;
+}
+.li-show{
+  opacity: 1;
+  visibility: visible;
+  transition: all 500ms ease;
+}
+.site{
+  margin:0 .85rem 0 .62rem;
+  color: #74818D;
+}
+.github{
+  &:hover{
+    color: #24292e;
+  }
+}
+.npm{
+  &:hover{
+    color: #cb3837;
+  }
+}
+.facebook{
+  &:hover{
+    color: #4267b2;
+  }
+}
+.weChat{
+  &:hover{
+    color: #609700;
+  }
+}
+.qq{
+  &:hover{
+    color: #12b7f5;
+  }
+}

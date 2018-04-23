@@ -1,0 +1,64 @@
+.history-list{
+  width: 100%;
+}
+.history{
+  list-style: none;
+  width: 100%;
+}
+.info{
+  margin-bottom: 1rem;
+}
+.h3{
+  font-size: .8rem;
+  color: #7f7f7f;
+}
+.left{
+  width: 70%;
+}
+.right{
+  width: 30%;
+  color: #7f7f7f;
+  cursor: pointer;
+  transition: color 500ms ease;
+  &:hover{
+    color: #3f3f3f;
+    transition: color 500ms ease;
+  }
+}
+.right-icon{
+  margin-right: .3rem;
+}
+.row{
+  margin: .2rem 0;
+}
+.link{
+  color: #74818D;
+  font-size: .7rem;
+  transition: color 500ms ease;
+  .line {
+    width: 0;
+    height: .1rem;
+    background-color: #6495ed;
+    transition: width 0.125s linear;
+  }
+  &:hover{
+    color: #000;
+    transition: color 500ms ease;
+    .line {
+      width: 20%;
+      transition: width 0.125s linear;
+    }
+  }
+}
+.icon{
+  margin-right: .5rem;
+}
+.page{
+  width:50%;
+}
+.time{
+  width:25%;
+}
+.duration{
+  width:25%;
+}

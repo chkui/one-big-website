@@ -1,0 +1,44 @@
+{
+  "name": "chkui-site",
+  "version": "1.0.0",
+  "description": "CHKUI-SITE",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --host 0.0.0.0 --progress --colors --hot --inline --config ./dev/scripts/webpack.client",
+    "dev-start": "cross-env NODE_ENV=development nodemon ./dev/server/dev.js --watch server --watch build",
+    "dev-build": "cross-env NODE_ENV=dev NODE_BUILDER=DEV  node ./site/server/builder.js  --watch server --watch build",
+    "test-build": "cross-env NODE_ENV=test NODE_BUILDER=TEST  node ./site/server/builder.js  --watch server --watch build",
+    "build-mirror": "cross-env NODE_ENV=production NODE_BUILDER=MIR node ./site/server/builder.js  --watch server --watch build",
+    "build": "cross-env NODE_ENV=production NODE_BUILDER=PRO node ./site/server/builder.js --watch server --watch build",
+    "test-start": "pm2 start ./site/pm2/test.config.js",
+    "mirror-start": "pm2 start ./site/pm2/mirror.config.js",
+    "start": "pm2 start ./site/pm2/pro.config.js",
+    "test-stop": "pm2 stop ./site/pm2/test.config.js & pm2 delete ./site/pm2/test.config.js",
+    "mirror-stop": "pm2 stop ./site/pm2/mirror.config.js & pm2 delete ./site/pm2/mirror.config.js",
+    "stop": "pm2 stop ./site/pm2/pro.config.js & pm2 delete ./site/pm2/pro.config.js",
+    "clean": "rimraf ./site/dist/* ./log/*"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.5",
+    "@fortawesome/fontawesome-free-brands": "^5.0.10",
+    "@fortawesome/fontawesome-free-regular": "^5.0.10",
+    "@fortawesome/fontawesome-free-solid": "^5.0.10",
+    "@fortawesome/fontawesome-free-webfonts": "^1.0.6",
+    "@fortawesome/react-fontawesome": "0.0.17",
+    "cookies-js": "^1.2.3",
+    "cross-env": "^3.2.4",
+    "full-rich-text-process": "^1.0.2",
+    "node-noop": "^1.0.0",
+    "pm2": "^2.10.2",
+    "pwfe-dom": "^1.0.23",
+    "pwfe-server": "git+https://github.com/palmg/pwfe-server.git",
+    "rsimditor": "^1.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-plugin-react": "^6.8.0",
+    "nodemon": "^1.17.3",
+    "rimraf": "^2.6.2"
+  },
+  "author": "CHKUI",
+  "license": "MIT"
+}

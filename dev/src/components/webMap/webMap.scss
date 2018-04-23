@@ -1,0 +1,29 @@
+.web-map{
+  position: fixed;
+  padding-left: .3rem;
+  top: 0;
+  z-index: 1;
+  width: 10rem;
+  height: 100%;
+  overflow-y: auto;
+}
+.box-top{
+  width: 1rem;
+  height: 4rem;
+  transition: height 500ms ease;
+}
+.box-bread-crumb-top{
+  width: 1rem;
+  height: 4rem;
+  transition: height 500ms ease;
+}
+.box-scroll{
+  width: 1rem;
+  height: 2rem;
+  transition: height 500ms ease;
+}
+.box-bread-crumb-scroll{
+  width: 1rem;
+  height: 2rem;
+  transition: height 500ms ease;
+}

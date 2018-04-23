@@ -1,0 +1,61 @@
+.header-wrapper{
+  height: 4rem;
+}
+.header-box{
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+.annotation{
+  overflow: hidden;
+}
+.none{
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 500ms ease;
+}
+.top{
+  height: 4rem;
+  transition: all 500ms ease;
+}
+.scroll{
+  height: 2rem;
+  transition: all 500ms ease;
+}
+.breadcrumb-top{
+  height: 2rem;
+  transition: all 500ms ease;
+}
+.breadcrumb-scroll{
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 500ms ease;
+}
+.header{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  @media screen and(min-width: 1024px) {//大于1201px
+    width: 50rem;
+  }
+}
+.header-left{
+  min-width: 1px;
+  font-size: 1.8rem;
+}
+.icon-img{
+  height: 1.5rem;
+}
+.header-right{
+}
+.figure{
+  font-size: 3rem;
+  color:#6495ed;
+}
