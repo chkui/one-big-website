@@ -2,7 +2,7 @@
  * Created by chkui on 2017/6/22.
  */
 const path = require('path'),
-    routes = require('../../dev/config/routes'),
+    routes = require('../../dev/config/serverRoutes'),
     reducer = require('../../dev/config/reducer'),
     vendor = require('../../webpack/vendor'),
     config = {
@@ -24,6 +24,7 @@ const path = require('path'),
         port: 12000,
         header : () => require("../../dev/src/header"),
         footer : () => require("../../dev/src/footer"),
+        staticResourceCopy:['./dev/views/robots.txt'],
         define: {
             __RunMode: JSON.stringify('SITE'),
             __FluxLogLevel:"'None'",
