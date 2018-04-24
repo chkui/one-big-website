@@ -22,8 +22,9 @@ export const loadArticle = (category, id, showType) => {
             icon = categoryType.icon,
             title = article.subject,
             routes = [
-                {name: 'Home', url: '/'}, {name: 'Category', url: '/category'}, {
-                    name: categoryTypeMap[category].name,
+                {title:'首页', name: 'Home', url: '/'}, {title:'技术分类', name: 'Category', url: '/category'}, {
+                    title: categoryType.alt,
+                    name: categoryType.name,
                     url: `/category/${category}`
                 }],
             count = article.count;

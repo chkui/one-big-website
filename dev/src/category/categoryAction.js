@@ -31,7 +31,7 @@ export const loadCategoryAction = (categoryType, showType) => {
                     icon: category.icon,
                     breadcrumb: {
                         title: '',
-                        routes: [{name: 'Home', url: '/'}, {name: 'Category', url: '/category'}]
+                        routes: [{title: '首页', name: 'Home', url: '/'}, {title:'技术分类', name: 'Category', url: '/category'}]
                     }
                 }
             }).else(() => {
