@@ -6,63 +6,63 @@ export const categoryTypeMap = {
         code: 'react',
         name: 'React',
         des: '用于构建用户界面的JavaScript库',
-        alt: '随风溜达的向日葵 React 用于构建用户界面的JavaScript库',
+        alt: 'React 用于构建用户界面的JavaScript库',
         icon: {img: faReact, color: '#61dafb', type: 'font'}
     },
     nodeJs: {
         code: 'nodeJs',
         name: 'NodeJs',
         des: '基于事件驱动、非阻塞I/O模型的JavaScript 运行环境',
-        alt: '随风溜达的向日葵 nodeJs 基于事件驱动、非阻塞I/O模型的JavaScript 运行环境',
+        alt: 'nodeJs 基于事件驱动、非阻塞I/O模型的JavaScript 运行环境',
         icon: {img: faNode, color: '#43853d', type: 'font'}
     },
     java: {
         code: 'java',
         name: 'Java',
         des: '闻名全球的面向对象高级程序设计语言',
-        alt: '随风溜达的向日葵 java 闻名全球的面向对象高级程序设计语言',
+        alt: 'java 闻名全球的面向对象高级程序设计语言',
         icon: {img: faJava, color: '#f80000', type: 'font'}
     },
     hazelcast: {
         code: 'hazelcast',
         name: 'Hazelcast',
         des: '分布式内存数据网格，提供多种数据结构的分布式实现',
-        alt: '随风溜达的向日葵 hazelcast 分布式内存数据网格，提供多种数据结构的分布式实现',
+        alt: 'hazelcast 分布式内存数据网格，提供多种数据结构的分布式实现',
         icon: {img: 'hazelcastLogo', color: '#0d2a35', type: 'icon'}
     },
     spring: {
         code: 'spring',
         name: 'Spring',
         des: '基于IOC容器的Java轻量化解决方案',
-        alt: '随风溜达的向日葵 spring 基于IOC容器的Java轻量化解决方案',
+        alt: 'spring 基于IOC容器的Java轻量化解决方案',
         icon: {img: 'springLogo', color: '#68bd45', type: 'icon'}
     },
     vertx: {
         code: 'vertx',
         name: 'Vertx',
         des: '基于netty实现的Java非阻塞事件驱动框架',
-        alt: '随风溜达的向日葵 vertx 基于netty实现的Java非阻塞事件驱动框架',
+        alt: 'vertx 基于netty实现的Java非阻塞事件驱动框架',
         icon: {img: 'vertxLogo', color: '#782b90', type: 'icon'}
     },
     nginx: {
         code: 'nginx',
         name: 'Nginx',
         des: '高性能页面与反向代理服务器',
-        alt: '随风溜达的向日葵 nginx 高性能页面与反向代理服务器',
+        alt: 'nginx 高性能页面与反向代理服务器',
         icon: {img: 'nginxLogo', color: '#047832', type: 'icon'}
     },
     tensorflow: {
         code: 'tensorflow',
         name: 'TensorFlow',
         des: '基于DistBelief进行研发的第二代人工智能学习系统',
-        alt: '随风溜达的向日葵 tensorflow 基于DistBelief进行研发的第二代人工智能学习系统',
+        alt: 'tensorflow 基于DistBelief进行研发的第二代人工智能学习系统',
         icon: {img: 'tensorflowLogo', color: '#febd36', type: 'icon'}
     },
     jolokia: {
         code: 'jolokia',
         name: 'Jolokia',
         des: 'JSR-160的实现，通过JMX远程管理监控JVM',
-        alt: '随风溜达的向日葵 jolokia JSR-160的实现，通过JMX远程管理监控JVM',
+        alt: 'jolokia JSR-160的实现，通过JMX远程管理监控JVM',
         icon: {img: 'http://file.mahoooo.com/res/file/chk_website_jolokia_2018_4_14.png', color: '#800D0D', type: 'img'}
     }
 }

@@ -8,16 +8,16 @@ const cn = require('classnames/bind').bind(require('./nav.scss'))
 const Nav = props =>
     <nav className={cn('nav')}>
         <ul className={cn('ul')}>
-            <Li style={{width:'18px',height:'16px'}} rel="home" to="/" name="首页" icon={faHome}/>
-            <Li style={{width:'14px',height:'16px'}} rel="category tag" to="/category" name="分类" icon={faIndent}/>
-            <Li style={{width:'12px',height:'16px'}} rel="nofollow" to="/about" name="关于" icon={faPlug}/>
-            <Li style={{width:'16px',height:'16px'}} rel="nofollow" to="/search" name="检索" icon={faSearch}/>
+            <Li style={{width:'18px',height:'16px'}} title="网站首页" rel="home" to="/" name="首页" icon={faHome}/>
+            <Li style={{width:'14px',height:'16px'}} title="技术分类" rel="category tag" to="/category" name="分类" icon={faIndent}/>
+            <Li style={{width:'12px',height:'16px'}} title="关于作者" rel="nofollow" to="/about" name="关于" icon={faPlug}/>
+            <Li style={{width:'16px',height:'16px'}} title="检索" rel="nofollow" to="/search" name="检索" icon={faSearch}/>
         </ul>
     </nav>
 
 const Li = props =>
     <li className={cn('li')}>
-        <NavLink rel={props.rel} className={cn('link')} url={props.to}>
+        <NavLink rel={props.rel} title={props.title} className={cn('link')} url={props.to}>
             <p>
                 <span style={props.style} className={cn('icon')}>
                     <FontAwesomeIcon icon={props.icon}/>

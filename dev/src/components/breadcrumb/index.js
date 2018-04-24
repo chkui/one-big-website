@@ -7,7 +7,7 @@ const cn = require('classnames/bind').bind(require('./breadcrumb.scss'))
  *
  * @param {object} props {
  *    subject:标题
- *    routs:[{name,url}]
+ *    routs:[{title,name,url}]
  * }
  * @returns {*}
  * @constructor
@@ -16,7 +16,7 @@ const Breadcrumb = props => {
     const liList = [], len = props.routes.length;
     let count = 0
     for (let route of props.routes) {
-        liList.push(<li key={count} className={cn('li')}><NavLink url={route.url}>{route.name}</NavLink></li>)
+        liList.push(<li key={count} className={cn('li')}><NavLink title={route.title} url={route.url}>{route.name}</NavLink></li>)
         ++count < len && liList.push(<li key={`${count}block`} className={cn('li')}>/</li>)
     }
     return (

@@ -5,6 +5,8 @@ import {isServerEvn} from 'pwfe-dom/util'
 import {connect} from 'react-redux'
 import {initRunLocalAction} from '../../appAction'
 import {getArticleUrl, getCategoryUrl, getNavUrl} from '../../../config/url'
+import {categoryStructure, categoryTypeMap} from '../../../data/category'
+import {flow} from "../../common/flow";
 
 /**
  * 文章跳转标签,使用时传递数据注意数据突变问题，数据需要整体更新。发生突变不会变更。
@@ -16,6 +18,10 @@ import {getArticleUrl, getCategoryUrl, getNavUrl} from '../../../config/url'
  */
 export const ArticleLink = props => {
     const attr = Object.assign(getArticleUrl(props.category, props.url), props);
+    attr.title = flow(categoryStructure[props.category])
+        .then(structure=>structure[props.url])
+        .then(article=>article.subject)
+        .else('');
     delete attr.category;
     delete attr.url;
     return (<LinkComponent {...attr}/>)
@@ -33,6 +39,9 @@ ArticleLink.propTypes = {
 export const CategoryLink = props => {
     const attr = Object.assign(getCategoryUrl(props.category), props);
     delete attr.category;
+    attr.title = flow(categoryTypeMap[props.category])
+        .then(category=>category.alt)
+        .else('');
     return (<LinkComponent {...attr}/>)
 }
 CategoryLink.propTypes = {

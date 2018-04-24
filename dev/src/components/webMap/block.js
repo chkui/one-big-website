@@ -5,7 +5,7 @@ import {faAngleRight, faAngleDown} from '@fortawesome/fontawesome-free-solid'
 const cn = require('classnames/bind').bind(require('./block.scss'))
 
 /**
- * props {categoryName, articles:[{id,url,name}]}
+ * props {categoryName, articles:[{id,url,name,title}]}
  */
 class Block extends React.Component{
     constructor(...props){
