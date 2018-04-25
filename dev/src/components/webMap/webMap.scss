@@ -6,6 +6,18 @@
   width: 10rem;
   height: 100%;
   overflow-y: auto;
+  @media screen and(max-width: 1200px) { //大于1201px
+    right: 0;
+    width: 0;
+    overflow: hidden;
+    background-color: #fff;
+    border-left: 1px solid #eee;
+  }
+}
+.show{
+  @media screen and(max-width: 1200px) { //大于1201px
+    width: 10rem;
+  }
 }
 .box-top{
   width: 1rem;

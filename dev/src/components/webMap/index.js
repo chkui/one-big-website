@@ -21,11 +21,12 @@ for (let key in categoryStructure) {
 class WebMap extends React.Component {
     constructor(...props) {
         super(...props)
+        this.state = {show:false}
     }
 
     render() {
         return (
-            <div className={cn('web-map')}>
+            <div className={cn('web-map', this.state.show && 'show')}>
                 <Box/>
                 {categoryList.map(i => <Block key={i.key}{...i}/>)}
             </div>

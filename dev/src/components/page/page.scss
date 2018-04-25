@@ -13,4 +13,7 @@
   vertical-align: top;
   width: 2rem;
   height: 2rem;
+  @media screen and(max-width: 1200px) { //小于1200px
+    width: 0;
+  }
 }
