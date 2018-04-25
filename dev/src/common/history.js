@@ -14,7 +14,9 @@ const _CategoryListStr = '/category',
     _Category = '/category/',
     _Article = '/article/',
     _About = '/about',
-    _Home = '/';
+    _Search = '/search',
+    _Home = '/',
+    _HisLen = 150; //历史记录长度，只保留150条浏览记录。超过之后会强制删除
 
 /**
  * 增加浏览历史
@@ -29,12 +31,15 @@ export const pushHistory = (url) => {
     } else if (0 === url.indexOf(_Article)) {//文章页面
         foo = parseArticle;
     } else if (_About === url) {
-        foo = parseAbout
+        foo = parseAbout;
+    } else if (_Search === url) {
+        foo = parseSearch;
     } else if (_Home === url) {//首页
         foo = parseHome;
     } else {
         foo = parasUnknown;
     }
+    _History && _History.length > _HisLen && cleanHistory();
     push(foo(url));
 };
 
@@ -159,6 +164,15 @@ const parseAbout = (url) => {
         code: 'about',
         valid: true,
         name: '关于我们',
+        url
+    }
+};
+
+const parseSearch = (url) => {
+    return {
+        code: 'home',
+        valid: true,
+        name: '搜索',
         url
     }
 };

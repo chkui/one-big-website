@@ -21,7 +21,7 @@
         <link rel="icon" href="https://file.mahoooo.com/res/file/chk_blog_favicon_128.ico" sizes="128x128">
         <link rel="icon" href="https://file.mahoooo.com/res/file/chk_blog_favicon_256.ico" sizes="256x256">
         <% if (typeof(url) !== 'undefined') { %><link rel="canonical" href="<%- url %>"/><% }%>
-        <meta name="robots" content="index,follow"/>
+        <% if (typeof(robots) !== 'undefined') { %><meta name="robots" content="<%- robots %>"/><% }%>
         <% if (typeof(keywords) !== 'undefined') { %><meta name="keywords" content="<%- keywords %>"/><% }%>
         <% if (typeof(description) !== 'undefined') { %><meta name="description" content="<%- description %>"/><% }%>
         <meta name="author" content="随风溜达的向日葵"/>
@@ -47,5 +47,5 @@
             window.REDUX_STATE = <%- JSON.stringify(state) %>;
             window.SERVER_PARAMS = <%- JSON.stringify(params) %>
         </script>
-    <script type="text/javascript" src="/bundle8f801030.js"></script><script type="text/javascript" src="/vendor8f801030.js"></script></body>
+    <script type="text/javascript" src="/bundle075c4905.js"></script><script type="text/javascript" src="/vendor075c4905.js"></script></body>
 </html>

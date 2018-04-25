@@ -61,7 +61,7 @@ class HistoryList extends React.Component {
  * @constructor
  */
 const Item = props =>
-    (
+    (props && props.url) ? (
         <li className={cn('row')}>
             <Link className={cn('link')} to={props.url}>
                 <Cell className={cn('page')} icon={getBrowserIcon(props.browser)}>{props.name}</Cell>
@@ -70,7 +70,7 @@ const Item = props =>
                 <Hr/>
             </Link>
         </li>
-    )
+    ) : null
 
 const Hr = connect(
     (state) => ({

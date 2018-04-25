@@ -54,6 +54,7 @@ export default [{//首页
     renderRule: true,
 }, {
     id: "search",
+    url: "/search",
     component: (call) => {
         require.ensure([], require => {
             call(require("../src/search"))
