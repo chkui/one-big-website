@@ -24,7 +24,7 @@ const path = require('path'),
         port: 12000,
         header : () => require("../../dev/src/header"),
         footer : () => require("../../dev/src/footer"),
-        static:['./dev/views/robots.txt'],
+        static:['./dev/views/robots.txt', './dev/views/baidu-push-link.js'],
         define: {
             __RunMode: JSON.stringify('SITE'),
             __FluxLogLevel:"'None'",
