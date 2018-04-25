@@ -34,7 +34,7 @@ const FooterComp = props =>
             <div className={cn('footer')}>
                 <Item>© 2018 - 随风溜达的向日葵</Item>
                 <Item>
-                    <a rel="nofollow" className={cn('link')} to="http://www.miitbeian.gov.cn">粤ICP备15086789号-2</a>
+                    <a rel="nofollow" className={cn('link')} href="http://www.miitbeian.gov.cn">粤ICP备15086789号</a>
                 </Item>
             </div>
         </div>)
