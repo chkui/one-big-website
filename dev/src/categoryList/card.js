@@ -19,7 +19,7 @@ const cn = require('classnames/bind').bind(require('./card.scss'))
  */
 const Card = props =>
     <li className={cn('i-m', 'card-box')}>
-        <CategoryLink category={props.category} className={cn('card')}>
+        <CategoryLink rel="category tag" category={props.category} className={cn('card')}>
             <div style={props.color ? {color: props.color} : {}} className={cn('i-m', 'icon-box')}>
                 <span className={cn('icon')}>
                     {showComponent(props.iconType, props.icon, props.alt)}

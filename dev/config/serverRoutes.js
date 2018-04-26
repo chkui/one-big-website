@@ -193,7 +193,7 @@ const _ServerRouteConfig = {
             (url, params, store) => {
                 return new Promise((res, rej) => {
                     store.addListener((state) => {
-                        if (state.categoryTypeListReducer.list) {
+                        if (state.categoryTypeListReducer.listInfo) {
                             res();
                         }
                     })

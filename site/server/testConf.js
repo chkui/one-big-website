@@ -9,7 +9,7 @@ const path = require('path'),
         workDir: path.resolve(__dirname, '../..'),
         entry: './dev/src/chkui',
         outPath: './site/dist',
-        app: ()=> require('pwfe-dom/app'),
+        app: () => require('pwfe-dom/app'),
         htmlTemplatePath: './dev/views/index.tpl.html',
         serverEntry: './site/server/entry',
         serverModule: './node_modules',
@@ -20,13 +20,19 @@ const path = require('path'),
         sourceMap: 'source-map', //测试环境生成source-map
         mergingChunk: false,
         port: 12000,
-        header : () => require("../../dev/src/header"),
-        footer : () => require("../../dev/src/footer"),
-        static:['./dev/views/robots.txt', './dev/views/baidu-push-link.js'],
+        header: () => require("../../dev/src/header"),
+        footer: () => require("../../dev/src/footer"),
+        static: ['./dev/views/baidu-push-link.js',
+            './dev/views/robots.txt',
+            './dev/views/sitemap.xml',
+            './dev/views/sitemap-misc.xml',
+            './dev/views/sitemap-category.xml',
+            './dev/views/sitemap-article-react.xml',
+            './dev/views/sitemap-article-nodejs.xml'],
         define: {
             __RunMode: JSON.stringify('TEST'),
-            __FluxLogLevel:"'Detail'",
-            __History:"'Browser'"
+            __FluxLogLevel: "'Detail'",
+            __History: "'Browser'"
         },
         defPageName: '随风溜达的向日葵'
     }
