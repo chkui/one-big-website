@@ -1,5 +1,6 @@
 import React from 'react'
 import WebMap from '../webMap'
+import ScrollToTop from '../scroll/scrollToTop'
 import {connect} from 'react-redux'
 import {reRoute} from 'pwfe-dom/router'
 import {pushHistory} from '../../common/history'
@@ -44,6 +45,7 @@ const Page = reRoute()(connect(
                 {this.props.children}
             </div>
             <div className={cn('box')}><WebMap/></div>
+            <ScrollToTop />
         </main>)
     }
 }))

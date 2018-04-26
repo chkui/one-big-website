@@ -1,22 +1,46 @@
 .web-map{
   position: fixed;
-  padding-left: .3rem;
   top: 0;
   z-index: 1;
-  width: 10rem;
+  height: 100%;
+  @media screen and(max-width: 1200px) {
+    right: 0;
+  }
+}
+.menu{
+  position: absolute;
+  left: 0;
+  width: 2rem;
+  height: 3rem;
+  line-height: 3rem;
+  color: #fff;
+  background-color: #6495ed;
+  @media screen and(min-width: 1200px) {
+    display: none;
+  }
+}
+.category{
   height: 100%;
   overflow-y: auto;
-  @media screen and(max-width: 1200px) { //大于1201px
-    right: 0;
-    width: 0;
-    overflow: hidden;
+  @media screen and(min-width: 1200px) {
+    padding-left: .3rem;
+  }
+  @media screen and(max-width: 1200px) {
+    margin-left: 2rem;
     background-color: #fff;
-    border-left: 1px solid #eee;
   }
 }
 .show{
   @media screen and(max-width: 1200px) { //大于1201px
     width: 10rem;
+    padding-left: .3rem;
+    border-left: 1px solid #eee;
+  }
+}
+.hide{
+  @media screen and(max-width: 1200px) { //大于1201px
+    padding-left: 0;
+    width: 0;
   }
 }
 .box-top{

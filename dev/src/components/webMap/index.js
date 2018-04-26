@@ -1,5 +1,7 @@
 import React from 'react'
 import Block from './block'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import {faEllipsisV} from '@fortawesome/fontawesome-free-solid'
 import {categoryStructure, categoryTypeMap} from '../../../data/category'
 import {connect} from 'react-redux'
 
@@ -21,14 +23,17 @@ for (let key in categoryStructure) {
 class WebMap extends React.Component {
     constructor(...props) {
         super(...props)
-        this.state = {show:false}
+        this.state = {show: false}
     }
 
     render() {
         return (
-            <div className={cn('web-map', this.state.show && 'show')}>
+            <div className={cn('web-map')}>
                 <Box/>
-                {categoryList.map(i => <Block key={i.key}{...i}/>)}
+                <Menu/>
+                <div className={cn('category', this.state.show ? 'show' : 'hide')}>
+                    {categoryList.map(i => <Block key={i.key}{...i}/>)}
+                </div>
             </div>
         )
     }
@@ -48,5 +53,8 @@ const show = ['box-scroll',
     'box-bread-crumb-top',
     'box-bread-crumb-scroll'
 ]
+
+const Menu = props =>
+    <div className={cn('menu')}><FontAwesomeIcon icon={faEllipsisV} /></div>
 
 export default WebMap

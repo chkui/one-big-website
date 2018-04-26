@@ -87,7 +87,11 @@ hr {
 figure {
     margin: 0;
 }
-
+/*i=inline或inline-block*/
+.i-t{
+    display: inline-block;
+    vertical-align: top;
+}
 .i-m {
     display: inline-block;
     vertical-align: middle;
@@ -95,4 +99,15 @@ figure {
 .i-b {
     display: inline-block;
     vertical-align: bottom;
+}
+/*a=animation=动画相关属性*/
+.a-show{
+    opacity: 1;
+    visibility: visible;
+    transition: all 500ms ease;
+}
+.a-hide{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms ease;
 }
