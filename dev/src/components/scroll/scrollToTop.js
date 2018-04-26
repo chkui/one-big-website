@@ -4,6 +4,7 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import {faAngleUp} from '@fortawesome/fontawesome-free-solid'
 import {connect} from 'react-redux'
 import {ShowType} from '../../header/headerReducer'
+
 const cn = require('classnames/bind').bind(require('./scrollToTop.scss'))
 
 
@@ -18,14 +19,16 @@ const ScrollToTop = connect(
         this.handleClick = this.handleClick.bind(this)
     }
 
-    handleClick(){
+    handleClick() {
         0 !== window.scrollY && window.scrollTo(0, 0)
     }
 
     render() {
+        const icon = this.props.icon;
         return ReactDom.createPortal(
             (
-                <div className={cn('scroll', getScrollCss(this.props.showType))} onClick={this.handleClick}>
+                <div style={icon && icon.color ? {backgroundColor: icon.color} : {}}
+                     className={cn('scroll', getScrollCss(this.props.showType))} onClick={this.handleClick}>
                     <span className={cn('arrow')}>
                         <FontAwesomeIcon icon={faAngleUp}/>
                     </span>

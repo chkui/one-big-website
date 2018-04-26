@@ -1,7 +1,7 @@
 import React from 'react'
 import Block from './block'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import {faEllipsisV} from '@fortawesome/fontawesome-free-solid'
+import {faAngleDoubleRight, faAngleDoubleLeft} from '@fortawesome/fontawesome-free-solid'
 import {categoryStructure, categoryTypeMap} from '../../../data/category'
 import {connect} from 'react-redux'
 
@@ -22,15 +22,23 @@ for (let key in categoryStructure) {
 
 class WebMap extends React.Component {
     constructor(...props) {
-        super(...props)
-        this.state = {show: false}
+        super(...props);
+        this.state = {show: false};
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        this.setState((prevState, props) => ({
+            show: !prevState.show
+        }));
     }
 
     render() {
+        const show = this.state.show;
         return (
             <div className={cn('web-map')}>
                 <Box/>
-                <Menu/>
+                <Menu img={show ? faAngleDoubleRight : faAngleDoubleLeft} onClick={this.handleClick}/>
                 <div className={cn('category', this.state.show ? 'show' : 'hide')}>
                     {categoryList.map(i => <Block key={i.key}{...i}/>)}
                 </div>
@@ -47,14 +55,27 @@ const Box = connect(
     return (<div className={cn(show[props.showType])}/>)
 });
 
+/**
+ * img
+ */
+const Menu = connect(
+    (state) => ({
+        icon: state.headerShowReducer.icon
+    }),
+)(props => {
+    const icon = props.icon;
+    return (
+        <div style={icon && icon.color ? {backgroundColor: icon.color} : {}}
+             className={cn('menu')} onClick={props.onClick}>
+            <FontAwesomeIcon icon={props.img}/>
+        </div>)
+});
+
 const show = ['box-scroll',
     'box-top',
     'box-scroll',
     'box-bread-crumb-top',
     'box-bread-crumb-scroll'
 ]
-
-const Menu = props =>
-    <div className={cn('menu')}><FontAwesomeIcon icon={faEllipsisV} /></div>
 
 export default WebMap

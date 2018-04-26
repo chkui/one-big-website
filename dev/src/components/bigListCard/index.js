@@ -2,7 +2,6 @@ import React from 'react'
 import Title from './title'
 import Descr from './descr'
 import {ArticleLink, CategoryLink} from '../tag/a'
-import {Link} from 'pwfe-dom/router'
 import {connect} from 'react-redux'
 import {categoryTypeMap} from '../../../data/category'
 

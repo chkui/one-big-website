@@ -4,7 +4,7 @@
 .content{
   display: inline-block;
   vertical-align: top;
-  @media screen and(min-width: 1024px) {//大于1201px
+  @media screen and(min-width: 1024px) {
     width: 50rem;
   }
 }
@@ -13,7 +13,7 @@
   vertical-align: top;
   width: 2rem;
   height: 2rem;
-  @media screen and(max-width: 1200px) { //小于1200px
+  @media screen and(max-width: 1200px) {
     width: 0;
   }
 }

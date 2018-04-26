@@ -15,6 +15,7 @@
   line-height: 3rem;
   color: #fff;
   background-color: #6495ed;
+  cursor: pointer;
   @media screen and(min-width: 1200px) {
     display: none;
   }
@@ -35,12 +36,14 @@
     width: 10rem;
     padding-left: .3rem;
     border-left: 1px solid #eee;
+    transition: width 500ms ease;
   }
 }
 .hide{
   @media screen and(max-width: 1200px) { //大于1201px
-    padding-left: 0;
     width: 0;
+    padding-left: 0;
+    transition: width 500ms ease;
   }
 }
 .box-top{

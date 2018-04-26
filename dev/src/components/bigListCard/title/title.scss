@@ -3,4 +3,9 @@
   text-align: left;
   font-size: 1.6rem;
   line-height: 1.25;
+  @media screen and(max-width: 680px) {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.25;
+  }
 }

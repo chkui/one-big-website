@@ -10,7 +10,7 @@ const cn = require('classnames/bind').bind(require('./block.scss'))
 class Block extends React.Component{
     constructor(...props){
         super(...props)
-        this.height = this.props.articles.length * 1.1 + .2;
+        this.height = this.props.articles.length * 1.5;
         this.state = {fold:true};
         this.handleFoldClick = this.handleFoldClick.bind(this);
     }

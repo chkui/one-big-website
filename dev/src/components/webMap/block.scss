@@ -23,6 +23,9 @@
   margin: 0;
   font-size: .7rem;
   font-weight: 500;
+  @media screen and(max-width: 680px) {
+    font-size: .9rem;
+  }
 }
 .icon-box{
   display: inline-block;
