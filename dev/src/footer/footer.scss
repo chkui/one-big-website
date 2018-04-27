@@ -36,6 +36,9 @@
   @media screen and(min-width: 1024px) { //大于1201px
     width: 50rem;
   }
+  @media screen and(max-width: 1024px) { //大于1201px
+    width: 100%;
+  }
 }
 
 .item {

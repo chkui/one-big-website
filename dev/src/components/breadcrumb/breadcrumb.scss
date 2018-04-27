@@ -8,9 +8,12 @@
   text-align: left;
   height: 100%;
   line-height: 2rem;
-  width: 100%;
   @media screen and(min-width: 1024px) {
     width: 50rem;
+  }
+  @media screen and(max-width: 1024px) {
+    padding: 0 .2rem;
+    width: 100%;
   }
 }
 .title{
