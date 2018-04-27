@@ -32,7 +32,7 @@ const Footer = connect(
 const FooterComp = props =>
     (<div {...props.style} className={cn('footer-wrapper', props.className)}>
             <div className={cn('footer')}>
-                <Item><img src="https://file.mahoooo.com/res/file/chkui-website-favicon-32.ico"/>随风溜达的向日葵</Item>
+                <Item>随风溜达的向日葵</Item>
                 <Item>
                     <a rel="nofollow" className={cn('link')} href="http://www.miitbeian.gov.cn">粤ICP备15086789号</a>
                 </Item>

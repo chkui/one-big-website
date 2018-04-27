@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "CHKUI-SITE",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --host 192.168.201.65 --progress --colors --hot --inline --config ./dev/scripts/webpack.client",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --host 0.0.0.0 --progress --colors --hot --inline --config ./dev/scripts/webpack.client",
     "dev-start": "cross-env NODE_ENV=development nodemon ./dev/server/dev.js --watch server --watch build",
     "dev-build": "cross-env NODE_ENV=dev NODE_BUILDER=DEV  node ./site/server/builder.js  --watch server --watch build",
     "test-build": "cross-env NODE_ENV=test NODE_BUILDER=TEST  node ./site/server/builder.js  --watch server --watch build",
