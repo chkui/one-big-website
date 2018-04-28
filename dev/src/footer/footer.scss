@@ -44,15 +44,9 @@
 .item {
   margin-right: .5rem;
 }
-
-.mail {
-  margin-right: 2rem;
-}
-
-.mail-link {
-  color: #fff;
-  &:hover {
-    color: #333333;
+.site-name{
+  @media screen and(max-width: 680px) { //大于1201px
+    display: none;
   }
 }
 

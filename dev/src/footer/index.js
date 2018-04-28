@@ -32,7 +32,7 @@ const Footer = connect(
 const FooterComp = props =>
     (<div {...props.style} className={cn('footer-wrapper', props.className)}>
             <div className={cn('footer')}>
-                <Item>随风溜达的向日葵</Item>
+                <Item className={cn('site-name')}>随风溜达的向日葵</Item>
                 <Item>
                     <a rel="nofollow" className={cn('link')} href="http://www.miitbeian.gov.cn">粤ICP备15086789号</a>
                 </Item>
