@@ -27,9 +27,9 @@
     "@fortawesome/react-fontawesome": "0.0.17",
     "cookies-js": "^1.2.3",
     "cross-env": "^3.2.4",
-    "full-rich-text-process": "^1.0.2",
+    "full-rich-text-process": "^1.0.3",
     "node-noop": "^1.0.0",
-    "pm2": "^2.10.2",
+    "pm2": "^2.10.3",
     "pwfe-dom": "^1.0.23",
     "pwfe-server": "^2.0.1",
     "rsimditor": "^1.0.3"
