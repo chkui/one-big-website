@@ -25,11 +25,18 @@
   @media screen and(max-width: 680px) {
     font-size: .7rem;
   }
+  @media screen and(max-width: 350px) {
+    font-size: .7rem;
+    width: 100%;
+  }
 }
 .ul-box{
   display: inline-block;
   width: 50%;
   text-align: right;
+  @media screen and(max-width: 350px) {
+    display: none;
+  }
 }
 .ul{
   display: inline-block;

@@ -15,8 +15,7 @@ const Footer = connect(
     const icon = props.icon,
         style = icon && icon.color ? {style: {backgroundColor: icon.color}} : {}
     return (<footer>
-        <FooterComp style={style} className={cn('scroll', getScrollCss(props.showType))}/>
-        <FooterComp style={style} className={cn('bottom', getBottomCss(props.showType))}/>
+        <FooterComp style={style} className={cn('bottom', 'bottom-show')}/>
     </footer>)
 })
 

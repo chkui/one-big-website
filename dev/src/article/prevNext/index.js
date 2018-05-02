@@ -10,10 +10,12 @@ const PrevNext = props => {
     return prevNext ? (
         <div className={cn('prev-next')}>
             <div className={cn('i-m', 'left')}>
-                {prevNext.prev && (<ArticleLink className={cn('link')} category={category} url={prevNext.prev.url}>上一篇：{prevNext.prev.subject}</ArticleLink>)}
+                {prevNext.prev && (<ArticleLink className={cn('link')} category={category}
+                                                url={prevNext.prev.url}>上一篇<span className={cn('subject')}>：{prevNext.prev.subject}</span></ArticleLink>)}
             </div>
             <div className={cn('i-m', 'right')}>
-                {prevNext.next && (<ArticleLink className={cn('link')} category={category} url={prevNext.next.url}>下一篇：{prevNext.next.subject}</ArticleLink>)}
+                {prevNext.next && (<ArticleLink className={cn('link')} category={category}
+                                                url={prevNext.next.url}>下一篇<span className={cn('subject')}>：{prevNext.next.subject}</span></ArticleLink>)}
             </div>
         </div>) : null
 }
