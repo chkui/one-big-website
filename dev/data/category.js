@@ -1,4 +1,4 @@
-import {faReact, faNode, faJava} from '@fortawesome/fontawesome-free-brands'
+import {faReact, faNode, faJava, faLinux} from '@fortawesome/fontawesome-free-brands'
 import {flow} from '../src/common/flow'
 
 export const categoryTypeMap = {
@@ -64,6 +64,12 @@ export const categoryTypeMap = {
         des: 'JSR-160的实现，通过JMX远程管理监控JVM',
         alt: 'jolokia JSR-160的实现，通过JMX远程管理监控JVM',
         icon: {img: 'http://file.mahoooo.com/res/file/chk_website_jolokia_2018_4_14.png', color: '#800D0D', type: 'img'}
+    },
+    linux: {
+        code: 'linux',
+        name: 'Linux',
+        des: '地球上最伟大的操作系统之一',
+        icon: {img: faLinux, color: '#e95420', type: 'font'}
     }
 }
 
@@ -74,7 +80,7 @@ export const categoryStructure = {
         react_state_event_and_render: require('./articles/react/3_react_state_event_and_render')
     },
     nodeJs: {
-        install_nodejs_runtime_environment:require('./articles/nodejs/1_install_nodejs')
+        install_nodejs_runtime_environment: require('./articles/nodejs/1_install_nodejs')
     },
     java: {},
     hazelcast: {},
@@ -82,6 +88,9 @@ export const categoryStructure = {
     vertx: {},
     nginx: {},
     tensorflow: {},
+    linux: {
+        ubuntu_modify_view_port_by_xrandr: require('./articles/linux/1_modify_ubuntu_view_port')
+    },
     jolokia: {}
 }
 const getPosAndList = (category, id) => {
