@@ -3,6 +3,7 @@ import ReactDom from 'react-dom'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import {faAngleUp} from '@fortawesome/fontawesome-free-solid'
 import {connect} from 'react-redux'
+import {isServerEvn} from 'pwfe-dom/util'
 import {ShowType} from '../../header/headerReducer'
 
 const cn = require('classnames/bind').bind(require('./scrollToTop.scss'))
@@ -25,7 +26,7 @@ const ScrollToTop = connect(
 
     render() {
         const icon = this.props.icon;
-        return ReactDom.createPortal(
+        return isServerEvn() ? null : ReactDom.createPortal(
             (
                 <div style={icon && icon.color ? {backgroundColor: icon.color} : {}}
                      className={cn('scroll', getScrollCss(this.props.showType))} onClick={this.handleClick}>
