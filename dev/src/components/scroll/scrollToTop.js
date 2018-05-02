@@ -12,7 +12,8 @@ const cn = require('classnames/bind').bind(require('./scrollToTop.scss'))
 const ScrollToTop = connect(
     (state) => ({
         showType: state.headerScrollReducer.showType,
-        icon: state.headerShowReducer.icon
+        icon: state.headerShowReducer.icon,
+        isLocal: state.initRunLocalEnvReducer.isLocal
     }),
 )(class extends React.Component {
     constructor(...props) {
@@ -25,8 +26,8 @@ const ScrollToTop = connect(
     }
 
     render() {
-        const icon = this.props.icon;
-        return isServerEvn() ? null : ReactDom.createPortal(
+        const {icon, isLocal} = this.props;
+        return isLocal ? ReactDom.createPortal(
             (
                 <div style={icon && icon.color ? {backgroundColor: icon.color} : {}}
                      className={cn('scroll', getScrollCss(this.props.showType))} onClick={this.handleClick}>
@@ -36,7 +37,7 @@ const ScrollToTop = connect(
                 </div>)
             ,
             document.getElementById('modal-root')
-        )
+        ) : null
     }
 });
 
