@@ -2,16 +2,16 @@ import {isServerEvn} from 'pwfe-dom/util'
 import {flow} from '../src/common/flow'
 
 const HOST = {
-    host: 'http://www.chkui.com',
-    react: 'http://react.chkui.com',
-    nodeJs: 'http://nodejs.chkui.com',
-    java: 'http://java.chkui.com',
-    hazelcast: 'http://hazelcast.chkui.com',
-    spring: 'http://spring.chkui.com',
-    vertx: 'http://vertx.chkui.com',
-    nginx: 'http://nginx.chkui.com',
-    tensorflow: 'http://tensorflow.chkui.com',
-    jolokia: 'http://jolokia.chkui.com',
+    host: 'https://www.chkui.com',
+    react: 'https://react.chkui.com',
+    nodeJs: 'https://nodejs.chkui.com',
+    java: 'https://java.chkui.com',
+    hazelcast: 'https://hazelcast.chkui.com',
+    spring: 'https://spring.chkui.com',
+    vertx: 'https://vertx.chkui.com',
+    nginx: 'https://nginx.chkui.com',
+    tensorflow: 'https://tensorflow.chkui.com',
+    jolokia: 'https://jolokia.chkui.com',
     client: '',
 }
 

@@ -4,7 +4,7 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:mobile="http://www.baidu.com/schemas/sitemap-mobile/1/">
     <url>
-        <loc>http://www.chkui.com/article/linux/ubuntu_modify_view_port_by_xrandr</loc>
+        <loc>https://www.chkui.com/article/linux/ubuntu_modify_view_port_by_xrandr</loc>
         <mobile:mobile type="pc,mobile"/>
         <lastmod>2018-05-02T11:46:51+00:00</lastmod>
         <changefreq>monthly</changefreq>

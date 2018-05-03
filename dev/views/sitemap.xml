@@ -3,23 +3,23 @@
               xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd"
               xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <sitemap>
-        <loc>http://www.chkui.com/sitemap-misc.xml</loc>
+        <loc>https://www.chkui.com/sitemap-misc.xml</loc>
         <lastmod>2018-04-26T01:31:51+00:00</lastmod>
     </sitemap>
     <sitemap>
-        <loc>http://www.chkui.com/sitemap-category.xml</loc>
+        <loc>https://www.chkui.com/sitemap-category.xml</loc>
         <lastmod>2018-04-23T16:26:51+00:00</lastmod>
     </sitemap>
     <sitemap>
-        <loc>http://www.chkui.com/sitemap-article-react.xml</loc>
+        <loc>https://www.chkui.com/sitemap-article-react.xml</loc>s
         <lastmod>2018-04-26T01:31:51+00:00</lastmod>
     </sitemap>
     <sitemap>
-        <loc>http://www.chkui.com/sitemap-article-nodejs.xml</loc>
+        <loc>https://www.chkui.com/sitemap-article-nodejs.xml</loc>
         <lastmod>2018-04-26T01:31:51+00:00</lastmod>
     </sitemap>
     <sitemap>
-        <loc>http://www.chkui.com/sitemap-article-linux.xml</loc>
+        <loc>https://www.chkui.com/sitemap-article-linux.xml</loc>
         <lastmod>2018-04-26T01:31:51+00:00</lastmod>
     </sitemap>
 </sitemapindex>
