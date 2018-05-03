@@ -16,7 +16,7 @@
     "test-stop": "pm2 stop ./site/pm2/test.config.js & pm2 delete ./site/pm2/test.config.js",
     "mirror-stop": "pm2 stop ./site/pm2/mirror.config.js & pm2 delete ./site/pm2/mirror.config.js",
     "stop": "pm2 stop ./site/pm2/pro.config.js & pm2 delete ./site/pm2/pro.config.js",
-    "clean": "rimraf ./site/dist/* ./log/* ./dev/dist/*"
+    "clean": "rimraf ./site/dist/* ./log/* ./dev/dist/index.html"
   },
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.6",
