@@ -3,7 +3,7 @@ import {loadArticle} from '../src/article/articleAction'
 import {loadCategoryAction} from '../src/category/categoryAction'
 import {ShowType} from '../src/header/headerReducer'
 import {initRunLocalAction} from '../src/appAction'
-import {categoryTypeMap, categoryStructure} from '../data/category'
+import {categoryTypeMap, categoryStructure, getArticlePrevNext} from '../data/category'
 import {getArticleUrl, getCategoryUrl} from '../config/url'
 
 const _ServerRouteConfig = {
@@ -87,7 +87,9 @@ const _ServerRouteConfig = {
                         subject = article.subject,
                         modifiedTime = article.modifiedTime,
                         publishedTime = article.publishedTime,
-                        description = article.des
+                        description = article.des,
+                        prevNext = getArticlePrevNext(category, id);
+
                     res({
                         title: `${subject} - 随风溜达的向日葵`,
                         keywords: article.keywords,
@@ -96,8 +98,8 @@ const _ServerRouteConfig = {
                         pageType: 'article',
                         modifiedTime: modifiedTime,
                         publishedTime: publishedTime,
-                        prev: article.prev && getArticleUrl(category, article.prev).server,
-                        next: article.next && getArticleUrl(category, article.next).server,
+                        prev: prevNext && prevNext.prev && getArticleUrl(prevNext.prev.category, prevNext.prev.url).server,
+                        next: prevNext && prevNext.next && getArticleUrl(prevNext.next.category, prevNext.next.url).server,
                         robots: 'index,follow',
                         ldjson: JSON.stringify({
                             "@context": "http://schema.org",

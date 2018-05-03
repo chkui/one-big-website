@@ -41,6 +41,12 @@ export const getCategoryUrl = categoryId => {
     }
 }
 
+/**
+ *
+ * @param categoryId
+ * @param id
+ * @returns {{server: string 服务端跳转的URL, client: string 单页面应用跳转的URL}}
+ */
 export const getArticleUrl = (categoryId, id) => {
     const local =`/article/${categoryId}/${id}`;
     return {
