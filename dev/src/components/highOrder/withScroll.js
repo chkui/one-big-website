@@ -1,7 +1,7 @@
 import React from 'react'
 import {getComponentName} from 'pwfe-dom/util'
 
-const _callback = [], _LenStep = 100;
+const _callback = [], _LenStep = 15;
 let curScrollTop, isInitListener, isInitData;
 
 const addListener = (callback) => {
