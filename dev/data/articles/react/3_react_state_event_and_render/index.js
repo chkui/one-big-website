@@ -21,8 +21,7 @@ const article = {
         }, 'react_state_event_and_render')
     },
     modifiedTime: '2018-4-23 19:05:28',
-    publishedTime: '2018-4-23 19:05:28',
-    prev:'react_jsx_syntax_and_components'
+    publishedTime: '2018-4-23 19:05:28'
 }
 
 module.exports = article

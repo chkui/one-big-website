@@ -4,6 +4,7 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>http://www.chkui.com/article/nodeJs/install_nodejs_runtime_environment</loc>
+        <mobile:mobile type="pc,mobile"/>
         <lastmod>2018-04-26T01:31:51+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>

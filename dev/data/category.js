@@ -77,7 +77,9 @@ export const categoryStructure = {
     react: {
         react_establish_development_environment: require('./articles/react/1_react_establish_development_environment'),
         react_jsx_syntax_and_components: require('./articles/react/2_react_jsx_syntax_and_components'),
-        react_state_event_and_render: require('./articles/react/3_react_state_event_and_render')
+        react_state_event_and_render: require('./articles/react/3_react_state_event_and_render'),
+        react_list_key_and_form:require('./articles/react/4_react_list_key_and_form'),
+        react_understand_jsx_and_props:require('./articles/react/5_react_understand_jsx_and_props')
     },
     nodeJs: {
         install_nodejs_runtime_environment: require('./articles/nodejs/1_install_nodejs')

@@ -22,11 +22,11 @@ const _ServerRouteConfig = {
                 new Promise((res, rej) => {
                     res({
                         title: '随风溜达的向日葵 - 用自己的方式输出原创内容',
-                        keywords: '随风溜达的向日葵,软件开发,软件技术,个人博客,开源,开源技术,Java,Jvm,React,Nodejs,Node,Vertx,Nginx,Hazelcast,Spring,TensorFlow,Jolokia',
+                        keywords: '随风溜达的向日葵,软件开发,软件技术,个人博客,开源,开源技术,软件开发教程,Java,Jvm,React,Nodejs,Node,Vertx,Nginx,Hazelcast,Spring,TensorFlow,Jolokia',
                         url: 'http://www.chkui.com',
                         description: '随风溜达的向日葵(www.chkui.com)的个人技术博客。详细讲解Java、Jvm、Javascript、React、Nodejs、Vertx、Nginx、Hazelcast、Spring、TensorFlow、Jolokia等语言或开源技术的基础知识以及使用方法。随时跟进各种技术的最新动态并加以介绍。',
                         pageType: 'website',
-                        modifiedTime: '2018-4-20 17:48:39',
+                        modifiedTime: '2018-5-3 15:08:29',
                         publishedTime: '2018-3-21 15:16:46',
                         robots: 'index,follow',
                         ldjson: JSON.stringify({
@@ -153,7 +153,7 @@ const _ServerRouteConfig = {
                         url: 'http://www.chkui.com/category',
                         description: '核心软件开发技术分类，包括Java、React、Nodejs、Vertx、Nginx、Hazelcast、Spring、TensorFlow、Jolokia',
                         pageType: 'website',
-                        modifiedTime: '2018-4-20 17:48:39',
+                        modifiedTime: '2018-5-3 15:08:29',
                         publishedTime: '2018-3-21 15:16:46',
                         robots: 'index,follow',
                         ldjson: JSON.stringify({
