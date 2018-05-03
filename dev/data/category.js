@@ -63,7 +63,7 @@ export const categoryTypeMap = {
         name: 'Jolokia',
         des: 'JSR-160的实现，通过JMX远程管理监控JVM',
         alt: 'jolokia JSR-160的实现，通过JMX远程管理监控JVM',
-        icon: {img: 'http://file.mahoooo.com/res/file/chk_website_jolokia_2018_4_14.png', color: '#800D0D', type: 'img'}
+        icon: {img: 'https://file.mahoooo.com/res/file/chk_website_jolokia_2018_4_14.png', color: '#800D0D', type: 'img'}
     },
     linux: {
         code: 'linux',
