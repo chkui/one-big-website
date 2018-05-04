@@ -1,4 +1,5 @@
 export const homes = [
+    require('./articles/react/6_react_typechecking_with_proptypes_and_dom_element'),
     require('./articles/react/5_react_understand_jsx_and_props'),
     require('./articles/react/4_react_list_key_and_form'),
     require('./articles/linux/1_modify_ubuntu_view_port'),

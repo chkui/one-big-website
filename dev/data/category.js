@@ -79,7 +79,8 @@ export const categoryStructure = {
         react_jsx_syntax_and_components: require('./articles/react/2_react_jsx_syntax_and_components'),
         react_state_event_and_render: require('./articles/react/3_react_state_event_and_render'),
         react_list_key_and_form:require('./articles/react/4_react_list_key_and_form'),
-        react_understand_jsx_and_props:require('./articles/react/5_react_understand_jsx_and_props')
+        react_understand_jsx_and_props:require('./articles/react/5_react_understand_jsx_and_props'),
+        react_typechecking_with_proptypes_and_dom_element:require('./articles/react/6_react_typechecking_with_proptypes_and_dom_element')
     },
     nodeJs: {
         install_nodejs_runtime_environment: require('./articles/nodejs/1_install_nodejs')
@@ -117,24 +118,27 @@ const getPosAndList = (category, id) => {
 export const getRelated = (category, id, len) => {
     let posObj, result = false;
     if (posObj = getPosAndList(category, id)) {
-        const list = posObj.list, pos = posObj.pos;
+        const list = posObj.list, len = list.length, pos = posObj.pos;
         result = [];
-        if (list.length < len + 1) {
+        if (len < len + 1) {
             for (const item of list) {
                 id !== item.url && result.push(item);
             }
         } else if (0 === pos) {
             result.concat(list.slice(1, 5));
-        } else if (list.length - 1 === pos) {
-            result.concat(list.slice(list.length - 6, 5));
+        } else if (len - 1 === pos) {
+            result.concat(list.slice(len - 6, 5));
         } else {
             let hash = 1, count = 0;
             while (count < len) {
+                let curPos = 0;
                 if (++count % 2) {
-                    result.push(list[pos + hash++]);
+                    curPos = (pos + hash++)%len;
                 } else {
-                    result.push(list[pos - hash]);
+                    curPos = pos - hash;
+                    curPos < 0 && (curPos = (len + curPos)%len);
                 }
+                result.push(list[curPos]);
             }
         }
     }
