@@ -16,6 +16,7 @@
     "test-stop": "pm2 stop ./site/pm2/test.config.js & pm2 delete ./site/pm2/test.config.js",
     "mirror-stop": "pm2 stop ./site/pm2/mirror.config.js & pm2 delete ./site/pm2/mirror.config.js",
     "stop": "pm2 stop ./site/pm2/pro.config.js & pm2 delete ./site/pm2/pro.config.js",
+    "flow": "flow",
     "clean": "rimraf ./site/dist/* ./log/* ./dev/dist/index.html"
   },
   "dependencies": {
@@ -37,6 +38,7 @@
   "devDependencies": {
     "eslint": "^3.12.2",
     "eslint-plugin-react": "^6.8.0",
+    "flow-bin": "^0.71.0",
     "nodemon": "^1.17.3",
     "rimraf": "^2.6.2"
   },
