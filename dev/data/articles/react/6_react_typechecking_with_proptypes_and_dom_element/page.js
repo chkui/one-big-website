@@ -1,6 +1,6 @@
 export const content = '<h3 id="h3-1">使用PropTypes进行类型检查</h3>\n' +
     '<p>当应用不断增长时，可以用过类型检查发现很多bug。对于某些应用，可以使用JavaScript扩展工具来完成，比如使用&nbsp;\n' +
-    '    <a title="flow类型检查工具" href="https://flow.org/" rel="nofollow">Flow </a>或\n' +
+    '    <a title="flow类型检查工具" href="/article/react/react_static_type_check_with_flow" rel="nofollow">Flow </a>或\n' +
     '    <a title="Typescript官网" href="https://www.typescriptlang.org/" rel="nofollow">TypeScript </a>来检查整个工程。除了引入外部工具之外，React也提供了参数类型检查的功能，只需要为每一个属性指定一个&nbsp;<code>propTypes</code>&nbsp;即可：\n' +
     '</p>\n' +
     '<pre class="scala"><code class="language-javascript"><span class="code-comment"><span class="code-comment">// 15.5之后，需要单独引入依赖才能使用类型检查</span></span>\n' +

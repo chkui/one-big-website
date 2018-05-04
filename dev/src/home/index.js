@@ -1,19 +1,16 @@
-import React from 'react'
+// @flow
+import * as React from 'react'
 import Page from '../components/page'
 import BigListCard from '../components/bigListCard'
 import {homes} from '../../data/home'
 import {ShowType} from '../header/headerReducer'
-
 const cn = require('classnames/bind').bind(require('./home.scss'))
 
-const Home = props =>
-    <Page showType={ShowType.TOP}>
-        <List/>
-    </Page>
+const Home = (props: void) =>(<Page showType={ShowType.TOP}><List attr={1}/></Page>)
 
-const List = props =>
+const List = (props: {attr: number}) => (
     <div>
         {homes.map(i => <BigListCard key={i.url} {...i} />)}
-    </div>
+    </div>)
 
 module.exports = Home

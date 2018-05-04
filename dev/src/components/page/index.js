@@ -40,7 +40,7 @@ const Page = reRoute()(connect(
 
     render() {
         return (<main className={cn('page')}>
-            <div className={cn('box')}/>
+            {/*<div className={cn('box')}/>*/}
             <div className={cn('content')}>
                 {this.props.children}
             </div>

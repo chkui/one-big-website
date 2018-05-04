@@ -38,4 +38,18 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
+    <url>
+        <loc>https://www.chkui.com/article/react/react_typechecking_with_proptypes_and_dom_element</loc>
+        <mobile:mobile type="pc,mobile"/>
+        <lastmod>2018-05-05T00:07:51+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.chkui.com/article/react/react_static_type_check_with_flow</loc>
+        <mobile:mobile type="pc,mobile"/>
+        <lastmod>2018-05-05T00:07:51+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>

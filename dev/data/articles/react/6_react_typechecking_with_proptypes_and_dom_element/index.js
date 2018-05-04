@@ -12,7 +12,7 @@ const article = {
     category: 'react',
     tag: ['ReactJS', 'React', 'JSX'],
     url: 'react_typechecking_with_proptypes_and_dom_element',
-    des: '随着应用规模的增长以及参与开发的人员越来越多，组建之间、模块之间相互调用、组合出现的BUG的情况会呈指数级别的增长，这时我们引入传递参数的检测与限定机制来减轻这个问题。React提供了Props参数检查的机制，通过这个机制我们可以限定使用者在使用组件时的传递参数。此外React提供了refs机制用于直接获取真实Dom或者子组建的实力。',
+    des: '随着应用规模的增长以及参与开发的人员越来越多，组件模块之间相互调用出现的BUG的情况会呈指数级别的增长，这时我们可以引入传递参数的检测与限定机制来减轻这个问题。React提供了Props参数检查的机制，通过这个机制我们可以限定使用者在使用组件时的传递参数。此外React提供了refs机制用于直接获取真实Dom或者子组件的实例。',
     count: 1870,
     index: [{id: 'h3-1', name: '使用PropTypes进行类型检查'}, {
         id: 'h3-2',
