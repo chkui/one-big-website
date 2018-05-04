@@ -12,7 +12,7 @@ const _ServerRouteConfig = {
         renderActions: [
             (url, params, store) => {
                 return new Promise((res, rej) => {
-                    store.dispatch(initRunLocalAction(false))
+                    store.dispatch(initRunLocalAction(false));
                     res();
                 })
             }
@@ -23,7 +23,7 @@ const _ServerRouteConfig = {
                     res({
                         title: '随风溜达的向日葵 - 用自己的方式输出原创内容',
                         keywords: '随风溜达的向日葵,软件开发,软件技术,个人博客,开源,开源技术,软件开发教程,Java,Jvm,React,Nodejs,Node,Vertx,Nginx,Hazelcast,Spring,TensorFlow,Jolokia',
-                        url: 'http://www.chkui.com',
+                        url: 'https://www.chkui.com',
                         description: '随风溜达的向日葵(www.chkui.com)的个人技术博客。详细讲解Java、Jvm、Javascript、React、Nodejs、Vertx、Nginx、Hazelcast、Spring、TensorFlow、Jolokia等语言或开源技术的基础知识以及使用方法。随时跟进各种技术的最新动态并加以介绍。',
                         pageType: 'website',
                         modifiedTime: '2018-5-3 15:08:29',
@@ -32,8 +32,8 @@ const _ServerRouteConfig = {
                         ldjson: JSON.stringify({
                             "@context": "http://schema.org",
                             "@type": "WebPage",
-                            "@id": "http://www.chkui.com",
-                            "url": "http://www.chkui.com",
+                            "@id": "https://www.chkui.com",
+                            "url": "https://www.chkui.com",
                             "name": '随风溜达的向日葵 - 用自己的方式输出原创内容',
                             "headline": '随风溜达的向日葵 - 用自己的方式输出原创内容',
                             "image": {
@@ -213,7 +213,7 @@ const _ServerRouteConfig = {
                         description = `${name} ${category.des}`;
                     res({
                         title: title,
-                        keywords: '随风溜达的向日葵,软件开发技术分类,React',
+                        keywords: `随风溜达的向日葵,软件开发技术分类,${name}`,
                         url: innerUrl,
                         description: description,
                         pageType: 'website',
@@ -256,7 +256,7 @@ const _ServerRouteConfig = {
                 new Promise((res, rej) => {
                     res({
                         title: '关于',
-                        keywords: '随风溜达的向日葵,软件开发技术分类,React',
+                        keywords: '随风溜达的向日葵,软件开发技术分类,关于作者',
                         robots: 'nofollow'
                     })
                 })
