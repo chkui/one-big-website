@@ -1,6 +1,4 @@
-export const content = '\n' +
-    '\n' +
-    '<h2 id="h2-1">Flow</h2>\n' +
+export const content = '<h2 id="h2-1">Flow</h2>\n' +
     '<p>Flow是Facebook开源的静态代码检查工具，他的作用是在运行代码之前对React组件以及Jsx语法进行静态代码的检查以发现一些可能存在的问题。Flow可以用于所有前端开发的项目而不仅仅局限于React，码友们可以到\n' +
     '  <a title="Flow官网" href="https://flow.org/en/docs/getting-started/" rel="nofollow">官网</a>仔细了解（友情提示：可能需要VPN，非常不稳定），本文只介绍如何配合React开发使用。</p>\n' +
     '<p>Flow仅仅是一个用于检查的工具，安装使用都很方便，使用时注意以下3点即可：</p>\n' +
@@ -61,7 +59,7 @@ export const content = '\n' +
     '<h3 id="h3-2">Babel</h3>\n' +
     '<p>在15.x版本之前入坑React的码友应该绝大部分都用的Babel作为语法糖编译器，那个时候毕竟Create React App完全没有成熟。如果使用Babel我们还需要安装一个Babel对于Flow的preset：</p>\n' +
     '<pre class="sql"><code class="language-apache">npm <span class="code-keyword">install</span> <span class="code-comment">--save-dev babel-preset-flow</span></code></pre>\n' +
-    '<p>然后，我们需要在<a title="Babel配置文件" href="http://babeljs.io/docs/usage/babelrc/" rel="nofollow">Babel的配置文件中</a>添加一个Flow相关的preset：</p>\n' +
+    '<p>然后，我们需要在<a title="Babel配置文件" href="http://babeljs.io/docs/usage/babelrc/" target="_blank" rel="nofollow">项目根目录Babel的配置文件 .babelrc 中</a>添加一个Flow相关的preset：</p>\n' +
     '<pre class="json"><code class="language-javascript">{\n' +
     '  <span class="code-string"><span class="hljs-attr">"presets"</span></span>: [\n' +
     '    <span class="code-string"><span class="code-string">"flow"</span></span>,\n' +
