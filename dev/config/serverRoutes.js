@@ -91,7 +91,7 @@ const _ServerRouteConfig = {
                         prevNext = getArticlePrevNext(category, id);
 
                     res({
-                        title: `${subject} - 随风溜达的向日葵`,
+                        title: `${subject}`,
                         keywords: article.keywords,
                         url: url,
                         description: description,
@@ -209,7 +209,7 @@ const _ServerRouteConfig = {
                     const category = categoryTypeMap[params.type],
                         name = category.name,
                         innerUrl = getCategoryUrl(params.type).server,
-                        title = `${name} - 随风溜达的向日葵`,
+                        title = `${name}`,
                         description = `${name} ${category.des}`;
                     res({
                         title: title,
