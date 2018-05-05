@@ -56,7 +56,9 @@ const Header = connect(
                         this.dev = dev
                     }} className={cn('header-box')}>
                         <Column3 className={cn('annotation', ShowScroll[props.showType])}
-                                 childrenClassName={cn('center')}>
+                                 leftClassName={cn('left')}
+                                 childrenClassName={cn('center')}
+                                 rightClassName={cn('right')}>
                             <header className={cn('header')}>
                                 <div className={cn('header-left')}>
                                     {icon && getImg(style, icon.type, icon.img)}

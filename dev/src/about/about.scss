@@ -1,15 +1,16 @@
+@import "../define";
 .about{
   padding: 2.8rem 4.8rem;
   text-align: left;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  @media screen and(max-width: 700px) {
+  @media screen and(max-width: 900px) { //小于900px时取消边距
     padding: .5rem;
   }
 }
 .h1{
   font-size: 1.5rem;
   font-weight: 600;
-  @media screen and(max-width: 700px) {
+  @media screen and(max-width: $mediumScreen) {
     font-size: 1.2rem;
   }
 }
@@ -18,7 +19,7 @@
   font-size: 1.2rem;
   font-weight: 500;
   color: #7f7f7f;
-  @media screen and(max-width: 700px) {
+  @media screen and(max-width: $mediumScreen) {
     padding: 1rem 0;
     font-size: 1rem;
   }
@@ -28,13 +29,13 @@
 .ul{
   list-style: none;
   margin: 2rem 0;
-  @media screen and(max-width: 700px) {
+  @media screen and(max-width: $mediumScreen) {
     margin: 1rem 0;
   }
 }
 .li{
   margin: 1rem 0;
-  @media screen and(max-width: 700px) {
+  @media screen and(max-width: $mediumScreen) {
   }
 }
 .li-hide{

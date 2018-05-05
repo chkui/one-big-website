@@ -1,3 +1,4 @@
+@import "../../define";
 .history-list{
   width: 100%;
 }
@@ -55,13 +56,13 @@
 }
 .page{
   width:50%;
-  @media screen and(max-width: 700px) {
+  @media screen and(max-width: $mediumScreen) {
     width:75%;
   }
 }
 .time{
   width:25%;
-  @media screen and(max-width: 700px) {
+  @media screen and(max-width: $mediumScreen) {
     display: none;
   }
 }

@@ -1,15 +1,27 @@
+@import "../../define";
 .wrapper{
   height: 2rem;
   width: 100%;
   background-color: #333;
+}
+.left{
+  @media screen and(max-width: $largeScreen) {
+    width: 1%;
+  }
 }
 .breadcrumb{
   display: inline-block;
   text-align: left;
   height: 100%;
   line-height: 2rem;
-  @media screen and(max-width: 1024px) {
+  @media screen and(max-width: $largeScreen) {
+    width: 98%;
     padding: 0 .2rem;
+  }
+}
+.right{
+  @media screen and(max-width: $largeScreen) {
+    width: 1%;
   }
 }
 .title{
@@ -17,10 +29,10 @@
   font-size: 1rem;
   font-weight: 500;
   color: #fff;
-  @media screen and(max-width: 680px) {
+  @media screen and(max-width: $mediumScreen) {
     font-size: .7rem;
   }
-  @media screen and(max-width: 350px) {
+  @media screen and(max-width: $smallScreen) {
     font-size: .7rem;
     width: 100%;
   }
@@ -28,8 +40,10 @@
 .ul-box{
   width: 50%;
   text-align: right;
-  @media screen and(max-width: 350px) {
-    display: none;
+  @media screen and(max-width: $smallScreen) {
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
   }
 }
 .ul{

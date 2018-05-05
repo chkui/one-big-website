@@ -1,16 +1,12 @@
-// @flow
-import * as React from 'react'
+import React from 'react'
 import Page from '../components/page'
 import BigListCard from '../components/bigListCard'
 import {homes} from '../../data/home'
 import {ShowType} from '../../config/redux/headerReducer'
-const cn = require('classnames/bind').bind(require('./home.scss'))
+const cn = require('classnames/bind').bind(require('./home.scss'));
 
-const Home = (props: void) =>(<Page showType={ShowType.TOP}><List attr={1}/></Page>)
+const Home = props =>(<Page showType={ShowType.TOP}><List/></Page>);
 
-const List = (props: {attr: number}) => (
-    <div>
-        {homes.map(i => <BigListCard key={i.url} {...i} />)}
-    </div>)
+const List = props => (<div>{homes.map(i => <BigListCard key={i.url} {...i} />)}</div>);
 
 module.exports = Home

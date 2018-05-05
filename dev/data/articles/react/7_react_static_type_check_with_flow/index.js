@@ -12,6 +12,7 @@ const article = {
     category: 'react',
     tag: ['ReactJS', 'React', 'JSX'],
     url: 'react_static_type_check_with_flow',
+    keywords:'Flow,React,React教程,静态检查,PropType',
     des: '上一篇文章已经介绍了通过React的PropTypes对象对组件传入的参数进行限定和检查，除此之外还可以使用Flow来检查JavaScript代码以及Jsx语法存在的问题。Flow面向的是静态类型检查，可以将其融入到项目测试、发布的流程中去。',
     count: 2967,
     index: [{id: 'h2-1', name: 'Flow'}, {id: 'h2-2', name: '将Flow增加到我们的项目中'}, {

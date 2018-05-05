@@ -38,7 +38,7 @@ class WebMap extends React.Component {
         return (
             <div className={cn('web-map')}>
                 {/*<Box/>*/}
-                <Menu img={show ? faAngleDoubleRight : faAngleDoubleLeft} onClick={this.handleClick}/>
+                {/*<Menu img={show ? faAngleDoubleRight : faAngleDoubleLeft} onClick={this.handleClick}/>*/}
                 <div className={cn('category', this.state.show ? 'show' : 'hide')}>
                     {categoryList.map(i => <Block key={i.key}{...i}/>)}
                 </div>

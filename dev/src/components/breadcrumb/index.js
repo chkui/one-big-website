@@ -22,9 +22,11 @@ const Breadcrumb = props => {
     }
     return (
         <div className={cn('wrapper')}>
-            <Column3 childrenClassName={cn('breadcrumb')}>
-                <h2 className={cn('title', 'i-t')}>{props.subject}</h2>
-                <div className={cn('ul-box', 'i-t')}>
+            <Column3 leftClassName={cn('left')}
+                childrenClassName={cn('breadcrumb')}
+                rightClassName={cn('right')}>
+                <h2 className={cn('i-t', 'title')}>{props.subject}</h2>
+                <div className={cn('i-t', 'ul-box')}>
                     <ul className={cn('ul')}>
                         {liList.map(i => i)}
                     </ul>

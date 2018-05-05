@@ -24,7 +24,7 @@ const _ServerRouteConfig = {
                         title: '随风溜达的向日葵 - 用自己的方式输出原创内容',
                         keywords: '随风溜达的向日葵,软件开发,软件技术,个人博客,开源,开源技术,软件开发教程,Java,Jvm,React,Nodejs,Node,Vertx,Nginx,Hazelcast,Spring,TensorFlow,Jolokia',
                         url: 'https://www.chkui.com',
-                        description: '随风溜达的向日葵(www.chkui.com)的个人技术博客。详细讲解Java、Jvm、Javascript、React、Nodejs、Vertx、Nginx、Hazelcast、Spring、TensorFlow、Jolokia等语言或开源技术的基础知识以及使用方法。随时跟进各种技术的最新动态并加以介绍。',
+                        description: '随风溜达的向日葵(www.chkui.com)的个人技术博客。详细讲解Java、Jvm、Javascript、React、Nodejs、Vertx、Nginx、Hazelcast、Spring、TensorFlow、Jolokia等语言或开源技术的基础知识以及使用方法。本人会随时跟进各种开源框架的更新并调整文章内容。',
                         pageType: 'website',
                         modifiedTime: '2018-5-3 15:08:29',
                         publishedTime: '2018-3-21 15:16:46',

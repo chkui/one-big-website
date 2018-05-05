@@ -12,6 +12,7 @@ const article = {
     category: 'react',
     tag: ['ReactJS', 'React', 'JSX'],
     url: 'react_understand_jsx_and_props',
+    keywords:'React,React教程,React参数,Props,Jsx',
     des: 'Jsx语法（JavaScript XML）和React组件的结合将整个UI分割成许多松耦合、独立、可复用并且每个部分都自持数据的“模块”。这些“模块”就像类一样，通过“接口”实现与其他组件的交互。本文将介绍React如何通过Jsx和Props特性来实现组件的功能。',
     count: 2703,
     index: [{

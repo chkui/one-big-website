@@ -1,3 +1,4 @@
+@import "../define";
 .header-wrapper{
   height: 4rem;
 }
@@ -37,9 +38,6 @@
   visibility: hidden;
   transition: all 500ms ease;
 }
-.center{
-  height: 100%;
-}
 .header{
   display: inline-flex;
   justify-content: space-between;
@@ -51,10 +49,24 @@
   min-width: 1px;
   font-size: 1.8rem;
 }
+.left{
+  @media screen and(max-width: $largeScreen) {
+    width: 1%;
+  }
+}
+.center{
+  height: 100%;
+  @media screen and(max-width: $largeScreen) {
+    width: 98%;
+  }
+}
+.right{
+  @media screen and(max-width: $largeScreen) {
+    width: 1%;
+  }
+}
 .icon-img{
   height: 1.5rem;
-}
-.header-right{
 }
 .figure{
   font-size: 3rem;

@@ -1,8 +1,9 @@
+@import "../../define";
 .history-info{
   padding: 3rem 5rem;
   text-align: left;
   width: 100%;
-  @media screen and(max-width: 700px) {
+  @media screen and(max-width: $mediumScreen) {
     padding: .5rem;
   }
 }

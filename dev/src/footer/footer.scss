@@ -1,3 +1,4 @@
+@import "../define";
 .scroll {
   position: relative;
   padding: .5rem 0;
@@ -6,13 +7,6 @@
 .scroll-hide {
   display: none;
 }
-
-/*.bottom {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  transition: all 0.225s linear;
-}*/
 
 .bottom-show {
   padding: .5rem 0;
@@ -33,19 +27,14 @@
 
 .footer {
   display: inline-block;
-  @media screen and(min-width: 1024px) { //大于1201px
-    width: 50rem;
-  }
-  @media screen and(max-width: 1024px) { //大于1201px
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .item {
   margin-right: .5rem;
 }
 .site-name{
-  @media screen and(max-width: 680px) { //大于1201px
+  @media screen and(max-width: $mediumScreen) {
     display: none;
   }
 }

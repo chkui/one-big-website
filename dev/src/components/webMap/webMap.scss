@@ -1,12 +1,12 @@
-.web-map{
-  top: 0;
-  z-index: 1;
+@import "../../define";
+.web-map {
   height: 100%;
-  @media screen and(max-width: 1200px) {
-    right: 0;
+  @media screen and(max-width: $mediumScreen) {
+    display: none;
   }
 }
-.menu{
+
+.menu {
   position: absolute;
   left: 0;
   width: 2rem;
@@ -15,22 +15,18 @@
   color: #fff;
   background-color: #6495ed;
   cursor: pointer;
-  @media screen and(min-width: 1200px) {
+  @media screen and(min-width: $largeScreen) {
     display: none;
   }
 }
-.category{
+
+.category {
   height: 100%;
   overflow-y: auto;
-  @media screen and(min-width: 1200px) {
-    padding-left: .3rem;
-  }
-  @media screen and(max-width: 1200px) {
-    margin-left: 2rem;
-    background-color: #fff;
-  }
+  padding-left: .3rem;
 }
-.show{
+
+/*.show{
   @media screen and(max-width: 1200px) { //大于1201px
     width: 10rem;
     padding-left: .3rem;
@@ -44,23 +40,26 @@
     padding-left: 0;
     transition: width 500ms ease;
   }
-}
-.box-top{
+}*/
+.box-top {
   width: 1rem;
   height: 4rem;
   transition: height 500ms ease;
 }
-.box-bread-crumb-top{
+
+.box-bread-crumb-top {
   width: 1rem;
   height: 4rem;
   transition: height 500ms ease;
 }
-.box-scroll{
+
+.box-scroll {
   width: 1rem;
   height: 2rem;
   transition: height 500ms ease;
 }
-.box-bread-crumb-scroll{
+
+.box-bread-crumb-scroll {
   width: 1rem;
   height: 2rem;
   transition: height 500ms ease;

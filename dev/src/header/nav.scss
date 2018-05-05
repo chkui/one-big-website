@@ -1,3 +1,4 @@
+@import "../define";
 .nav{
   display: inline-block;
   vertical-align: middle;
@@ -14,7 +15,7 @@
   display: inline-block;
   margin-left: 1rem;
   text-transform: uppercase;
-  @media screen and(max-width: 400px) {//大于1201px
+  @media screen and(max-width: $smallScreen) {
     margin: 0 .2rem;
   }
 }
