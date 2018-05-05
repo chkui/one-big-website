@@ -1,6 +1,6 @@
 import {categoryTypeMap, categoryStructure} from '../../data/category'
-import {headerShowAction, headerScrollAction} from "../header/headerAction";
-import {ShowType} from "../header/headerReducer";
+import {headerShowAction, headerScrollAction} from "./headerAction";
+import {ShowType} from "./headerReducer";
 /*
  * 更新article的内容，注意防止数据突变
  * @param articles {

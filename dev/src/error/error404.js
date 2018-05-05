@@ -1,6 +1,6 @@
 import React from 'react'
 import Page from '../components/page'
-import {ShowType} from '../header/headerReducer'
+import {ShowType} from '../../config/redux/headerReducer'
 import HistoryInfo from '../components/info/historyInfo'
 const cn = require('classnames/bind').bind(require('./error404.scss'))
 

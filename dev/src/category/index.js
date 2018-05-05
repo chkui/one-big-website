@@ -2,9 +2,9 @@ import React from 'react'
 import Page from '../components/page'
 import BigListCard from '../components/bigListCard'
 import HistoryInfo from '../components/info/historyInfo'
-import {ShowType} from '../header/headerReducer'
+import {ShowType} from '../../config/redux/headerReducer'
 import {connect} from 'react-redux'
-import {loadCategoryAction} from './categoryAction'
+import {loadCategoryAction} from '../../config/redux/categoryAction'
 
 const cn = require('classnames/bind').bind(require('./category.scss'))
 

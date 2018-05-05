@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {Link} from 'pwfe-dom/router'
 import {isServerEvn} from 'pwfe-dom/util'
 import {connect} from 'react-redux'
-import {initRunLocalAction} from '../../appAction'
+import {initRunLocalAction} from '../../../config/redux/appAction'
 import {getArticleUrl, getCategoryUrl, getNavUrl} from '../../../config/url'
 import {categoryStructure, categoryTypeMap} from '../../../data/category'
 import {flow} from "../../common/flow";

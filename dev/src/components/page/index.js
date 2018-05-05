@@ -1,10 +1,11 @@
 import React from 'react'
-/*import WebMap from '../webMap'*/
+import WebMap from '../webMap'
 import ScrollToTop from '../scroll/scrollToTop'
+import Column3 from '../contain/column3'
 import {connect} from 'react-redux'
 import {reRoute} from 'pwfe-dom/router'
 import {pushHistory} from '../../common/history'
-import {headerShowAction, headerScrollAction} from "../../header/headerAction";
+import {headerShowAction, headerScrollAction} from "../../../config/redux/headerAction";
 
 const cn = require('classnames/bind').bind(require('./page.scss'));
 
@@ -39,14 +40,19 @@ const Page = reRoute()(connect(
     }
 
     render() {
-        return (<main className={cn('page')}>
-            {/*<div className={cn('box')}/>*/}
+        return (<Column3 right={<WebMap/>}>
+            {this.props.children}
+            <ScrollToTop />
+        </Column3>)
+
+        /*(<main className={cn('page')}>
+            {/!*<div className={cn('box')}/>*!/}
             <div className={cn('content')}>
                 {this.props.children}
             </div>
-            {/*<div className={cn('box')}><WebMap/></div>*/}
+            {/!*<div className={cn('box')}><WebMap/></div>*!/}
             <ScrollToTop />
-        </main>)
+        </main>)*/
     }
 }))
 module.exports = Page

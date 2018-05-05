@@ -59,7 +59,7 @@ export const content = '<h2 id="h2-1">Flow</h2>\n' +
     '<h3 id="h3-2">Babel</h3>\n' +
     '<p>在15.x版本之前入坑React的码友应该绝大部分都用的Babel作为语法糖编译器，那个时候毕竟Create React App完全没有成熟。如果使用Babel我们还需要安装一个Babel对于Flow的preset：</p>\n' +
     '<pre class="sql"><code class="language-apache">npm <span class="code-keyword">install</span> <span class="code-comment">--save-dev babel-preset-flow</span></code></pre>\n' +
-    '<p>然后，我们需要在<a title="Babel配置文件" href="http://babeljs.io/docs/usage/babelrc/" target="_blank" rel="nofollow">项目根目录Babel的配置文件 .babelrc 中</a>添加一个Flow相关的preset：</p>\n' +
+    '<p>然后，我们需要在<a title="Babel配置文件" href="http://babeljs.io/docs/usage/babelrc/" rel="nofollow">项目根目录Babel的配置文件 .babelrc 中</a>添加一个Flow相关的preset：</p>\n' +
     '<pre class="json"><code class="language-javascript">{\n' +
     '  <span class="code-string"><span class="hljs-attr">"presets"</span></span>: [\n' +
     '    <span class="code-string"><span class="code-string">"flow"</span></span>,\n' +
@@ -117,10 +117,10 @@ export const content = '<h2 id="h2-1">Flow</h2>\n' +
     '\n' +
     '     /tmp/flow/flowlib_cc1898a/react.js\n' +
     ' [<span class="hljs-number">1</span>] <span class="hljs-number">26</span>│ <span class="code-built_in">declare</span> <span class="hljs-class"><span class="code-keyword">class</span> <span class="code-title">React</span></span><span class="code-variable"><span class="hljs-class"><span class="code-title">$Component</span></span></span><span class="hljs-class"><span class="code-title">&lt;Props</span>, <span class="code-title">State</span> </span>= void&gt; {</code></pre>\n' +
-    '<p>到这里，Flow已经算是安装成功了，接写来的事是要增加各种注解以加强类型限定或者参数检测。之后的内容将简要介绍flow的相关语法规则。</p>\n' +
+    '<p>到这里，Flow已经算是安装成功了，接下来的事是要增加各种注解以加强类型限定或者参数检测。之后的内容将简要介绍flow的相关语法规则。</p>\n' +
     '\n' +
     '<h2 id="h2-6">React组件参数检查</h2>\n' +
-    '<p><a title="PropType参数类型检测" href="/article/react/react_typechecking_with_proptypes_and_dom_element">https://www.chkui.com/article/react/react_typechecking_with_proptypes_and_dom_element</a>介绍了React通过PropType机制限定使用者使用组件传递的参数类型以及范围，但是PropType是一种运行检测机制，在程序跑起来之后获取到具体数据才会执行检查。而Flow是静态检查，是在代码编译运行之前进行一次检查，两者相辅相成互不干扰。</p>\n' +
+    '<p><a title="PropType参数类型检测" href="https://chkui.com/article/react/react_typechecking_with_proptypes_and_dom_element">React组件参数检查</a>介绍了React通过PropType机制限定使用者使用组件传递的参数类型以及范围，但是PropType是一种运行检测机制，在程序跑起来之后获取到具体数据才会执行检查。而Flow是静态检查，是在代码编译运行之前进行一次检查，两者相辅相成互不干扰。</p>\n' +
     '\n' +
     '<h3 id="h3-4">Props参数检查</h3>\n' +
     '<p>承接上面 MyComponent 的例子，我们引入Flow的注解对代码进行检查：</p>\n' +
@@ -205,7 +205,7 @@ export const content = '<h2 id="h2-1">Flow</h2>\n' +
     '</ul>\n' +
     '\n' +
     '<h3 id="h3-5">增加对State的检查</h3>\n' +
-    '<p>React的数据通过两处控制——<a title="React 深入说明JSX语法与Props特性" href="https://www.chkui.com/article/react/react_understand_jsx_and_props">props</a> 和&nbsp;<a title="React 状态、事件与动态渲染" href="https://www.chkui.com/article/react/react_state_event_and_render" rel="nofollow">state</a>。Flow也提供了state数据的检查，我们在例子中增加state检查：</p>\n' +
+    '<p>React的数据通过两处控制——<a title="React 深入说明JSX语法与Props特性" href="https://www.chkui.com/article/react/react_understand_jsx_and_props">props</a> 和&nbsp;<a title="React 状态、事件与动态渲染" href="https://www.chkui.com/article/react/react_state_event_and_render">state</a>。Flow也提供了state数据的检查，我们在例子中增加state检查：</p>\n' +
     '<pre class="scala"><code class="language-javascript"><span class="code-comment"><span class="code-comment">// @flow</span></span>\n' +
     '<span class="code-comment"><span class="code-comment">// flow的例子，可以看看和PropType的差异在哪</span></span>\n' +
     '<span class="code-keyword"><span class="code-keyword">import</span></span> <span class="code-type">React</span> <span class="code-keyword">from</span> <span class="code-string"><span class="hljs-symbol">\'reac</span>t\'</span>\n' +
@@ -315,7 +315,7 @@ export const content = '<h2 id="h2-1">Flow</h2>\n' +
     '}</code></pre>\n' +
     '\n' +
     '<h2 id="h2-7">遇到的一些问题</h2>\n' +
-    '<p>我在使用的过程中目前遇到的问题之一是import 样式资源&nbsp;或&nbsp; 图片时报 “./xxx.scss. Required module not found” 的以常，查看官方文档了解Flow只支持.js、.jsx、.mjs、.json的文件，如果需要导入其他文件需要并支持需要扩展options。在.flowconfig添加options：</p>\n' +
+    '<p>我在使用的过程中目前遇到的问题之一是import 样式资源&nbsp;或&nbsp; 图片时报 “./xxx.scss. Required module not found” 的异常，查看官方文档了解Flow只支持.js、.jsx、.mjs、.json的文件，如果需要导入其他文件需要并支持需要扩展options。在.flowconfig添加options：</p>\n' +
     '<pre class=""><code class="">[ignore]\n' +
     '[<span class="code-keyword"><span class="code-keyword">include</span></span>]\n' +
     '[libs]\n' +
@@ -326,6 +326,6 @@ export const content = '<h2 id="h2-1">Flow</h2>\n' +
     '<p>此外，某些IDE对Flow的支持不是很好。我目前所使用的webstorm 2017.3.5相对还不错，不过切记要到File-&gt;Setting-&gt;Languages&amp;Frameworks-&gt;Javascript中将version设置为Flow。</p>\n' +
     '\n' +
     '<h2 id="h2-8">写在最后的使用心得</h2>\n' +
-    '<p>引入并按照Flow的规范去约束每一个组件会导致开发量增加不少（当然你引入不用是另外一回事，但是不用引入他做什么？）。搭建好Flow的框架功能仅仅是开始，之后除了团队成员要去了解flow的使用方法，早期还会遇到各种坑需要去解决。而且Flow也要比React的 <a title="React 深入说明JSX语法与Props特性" href="/article/react/react_understand_jsx_and_props">PropTypes</a>&nbsp;要”重“许多。</p>\n' +
-    '<p>JavaScript本来是一个类型推导的原型语言，弄个Flow进来搞得越来越像Java这种强类型语言，也不知道是好是坏，而Java10又学JavaScript等加入了val这种类型推导的关键字....。</p>\n' +
-    '<p>总的来说引入规范是有成本的，具体要看团队规模以及项目大小，不是引入越多得技术栈就越有逼格。如果你独立项目的前端开发人数并不多，或者代码膨胀（代码腐烂）速度也没有让你措手不及，建议慎重引入Flow。Flow除了开发人员自检还要整合到整个测试框架中，在集成测试或某个版本的代码发布之前进行集中检查。需要思考它在项目的开发、测试、仿真、上线迭代周期中扮演的角色，甚至整合到类似与CMMI之类的管理流程去反向量化考核代码质量。</p>';
+    '<p>引入并按照Flow的规范去约束每一个组件会导致开发量增加不少（当然你引入不用是另外一回事，但是不用引入他做什么？）。搭建好Flow的框架仅仅是开始，之后除了团队成员要去了解flow的使用方法，早期还会遇到各种坑需要去解决。而且Flow也要比React的 <a title="React 深入说明JSX语法与Props特性" href="/article/react/react_understand_jsx_and_props">PropTypes</a>&nbsp;”重“许多。</p>\n' +
+    '<p>JavaScript本来是一个类型推导的原型语言，弄个Flow进来搞得越来越像Java这种强类型语言，也不知道是好是坏，而Java10又学JavaScript等加入了val这种可以类型推导的关键字....。</p>\n' +
+    '<p>总的来说引入规范是有成本的，具体要看团队规模以及项目大小，不是引入越多的技术栈就越有逼格。如果你独立项目的前端开发人数并不多，或者代码膨胀（代码腐烂）速度也没有让你措手不及，建议慎重引入Flow。个人觉得Flow除了开发人员自检还要整合到整个测试框架中，在集成测试或某个版本的代码发布之前进行集中检查。需要思考它在项目的开发、测试、仿真、上线迭代周期中扮演的角色，甚至整合到类似与CMMI之类的管理流程去反向量化考核代码质量。</p>';

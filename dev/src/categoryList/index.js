@@ -2,7 +2,7 @@ import React from 'react'
 import Page from '../components/page'
 import Card from './card'
 import {categoryTypeMap} from '../../data/category'
-import {ShowType} from '../header/headerReducer'
+import {ShowType} from '../../config/redux/headerReducer'
 const cn = require('classnames/bind').bind(require('./categoryList.scss'))
 
 const react = categoryTypeMap.react

@@ -12,7 +12,7 @@
 }
 .li{
   display: inline-block;
-  margin: 0 .5rem;
+  margin-left: 1rem;
   text-transform: uppercase;
   @media screen and(max-width: 400px) {//大于1201px
     margin: 0 .2rem;
@@ -35,5 +35,5 @@
 }
 .icon{
   display: inline-block;
-  margin-right: .3rem;
+  margin-left: .3rem;
 }

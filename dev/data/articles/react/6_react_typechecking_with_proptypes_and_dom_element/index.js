@@ -6,8 +6,8 @@ if (typeof require.ensure !== 'function') {
 }
 
 const article = {
-    subject: 'React prop类型检查与真实Dom操作',
-    shortSubject: 'prop类型检查与真实Dom操作',
+    subject: 'React prop类型检查与Dom',
+    shortSubject: 'prop类型检查与Dom',
     en_subject: 'React: Type checking With Proptypes And Dom Element',
     category: 'react',
     tag: ['ReactJS', 'React', 'JSX'],

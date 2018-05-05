@@ -8,16 +8,11 @@
   text-align: left;
   height: 100%;
   line-height: 2rem;
-  @media screen and(min-width: 1024px) {
-    width: 50rem;
-  }
   @media screen and(max-width: 1024px) {
     padding: 0 .2rem;
-    width: 100%;
   }
 }
 .title{
-  display: inline-block;
   width: 50%;
   font-size: 1rem;
   font-weight: 500;
@@ -31,7 +26,6 @@
   }
 }
 .ul-box{
-  display: inline-block;
   width: 50%;
   text-align: right;
   @media screen and(max-width: 350px) {
@@ -43,7 +37,7 @@
 }
 .li{
   display: inline-block;
-  padding: 0 .5rem;
+  padding-left: 1rem;
   color: #fff;
   font-size: .8rem;
   a{

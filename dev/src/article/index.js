@@ -1,11 +1,11 @@
 import React from 'react'
 import Page from '../components/page'
-import {ShowType} from '../header/headerReducer'
+import {ShowType} from '../../config/redux/headerReducer'
 import Content from './content'
 import Related from './related'
 import PrevNext from './prevNext'
-import {headerBreadcrumbAction, headerScrollAction} from "../header/headerAction";
-import {loadArticle} from './articleAction'
+import {headerBreadcrumbAction, headerScrollAction} from "../../config/redux/headerAction";
+import {loadArticle} from '../../config/redux/articleAction'
 import {connect} from 'react-redux'
 
 const cn = require('classnames/bind').bind(require('./article.scss'))

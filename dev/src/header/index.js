@@ -1,13 +1,15 @@
 import React from 'react'
 import Nav from './nav'
+import Column3 from '../components/contain/column3'
 import withScroll from '../components/highOrder/withScroll'
 import {connect} from 'react-redux'
-import {ShowType} from './headerReducer'
-import {headerScrollAction} from './headerAction'
+import {ShowType} from '../../config/redux/headerReducer'
+import {headerScrollAction} from '../../config/redux/headerAction'
 import Breadcrumb from '../components/breadcrumb'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import Tag from '../components/tag'
-const cn = require('classnames/bind').bind(require('./header.scss'))
+
+const cn = require('classnames/bind').bind(require('./header.scss'));
 
 const Header = connect(
     (state) => ({
@@ -39,7 +41,7 @@ const Header = connect(
             }
         }
 
-        componentDidMount(){
+        componentDidMount() {
         }
 
         render() {
@@ -53,7 +55,8 @@ const Header = connect(
                     <div ref={(dev) => {
                         this.dev = dev
                     }} className={cn('header-box')}>
-                        <div className={cn('annotation', ShowScroll[props.showType])}>
+                        <Column3 className={cn('annotation', ShowScroll[props.showType])}
+                                 childrenClassName={cn('center')}>
                             <header className={cn('header')}>
                                 <div className={cn('header-left')}>
                                     {icon && getImg(style, icon.type, icon.img)}
@@ -62,7 +65,7 @@ const Header = connect(
                                     <Nav/>
                                 </div>
                             </header>
-                        </div>
+                        </Column3>
                         {breadcrumb && <Breadcrumb subject={breadcrumb.title} routes={breadcrumb.routes}/>}
                     </div>
                 </div>
@@ -72,7 +75,7 @@ const Header = connect(
 ))
 
 const getImg = (style, type, img) => {
-    switch (type){
+    switch (type) {
         case 'icon':
             return (<Tag.Icon className={cn('icon-img')} src={img}/>)
         case 'font':

@@ -1,6 +1,6 @@
 import React from 'react'
 import Page from '../components/page'
-import {ShowType} from "../header/headerReducer";
+import {ShowType} from "../../config/redux/headerReducer";
 import {faWeixin, faTwitter, faFacebook,faGithub,faQq,faNpm,faOsi} from '@fortawesome/fontawesome-free-brands'
 import Mail from './grid/mail'
 import Svg from './grid/svg'

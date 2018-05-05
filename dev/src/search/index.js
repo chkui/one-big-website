@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from '../components/page'
 import HistoryInfo from '../components/info/historyInfo'
-import {ShowType} from '../header/headerReducer'
+import {ShowType} from '../../config/redux/headerReducer'
 const cn = require('classnames/bind').bind(require('./search.scss'));
 
 const Search = props =>

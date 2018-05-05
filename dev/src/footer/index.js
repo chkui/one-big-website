@@ -2,7 +2,7 @@ import React from 'react'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import {faEnvelope} from '@fortawesome/fontawesome-free-solid'
 import {connect} from 'react-redux'
-import {ShowType} from '../header/headerReducer'
+import {ShowType} from '../../config/redux/headerReducer'
 
 const cn = require('classnames/bind').bind(require('./footer.scss'))
 

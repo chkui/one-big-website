@@ -1,6 +1,6 @@
 export const content = '<h3 id="h3-1">使用PropTypes进行类型检查</h3>\n' +
     '<p>当应用不断增长时，可以用过类型检查发现很多bug。对于某些应用，可以使用JavaScript扩展工具来完成，比如使用&nbsp;\n' +
-    '    <a title="flow类型检查工具" href="/article/react/react_static_type_check_with_flow" rel="nofollow">Flow </a>或\n' +
+    '    <a title="flow类型检查工具" href="https://chkui.com/article/react/react_static_type_check_with_flow">Flow </a>或\n' +
     '    <a title="Typescript官网" href="https://www.typescriptlang.org/" rel="nofollow">TypeScript </a>来检查整个工程。除了引入外部工具之外，React也提供了参数类型检查的功能，只需要为每一个属性指定一个&nbsp;<code>propTypes</code>&nbsp;即可：\n' +
     '</p>\n' +
     '<pre class="scala"><code class="language-javascript"><span class="code-comment"><span class="code-comment">// 15.5之后，需要单独引入依赖才能使用类型检查</span></span>\n' +
@@ -28,58 +28,58 @@ export const content = '<h3 id="h3-1">使用PropTypes进行类型检查</h3>\n' 
     '<span class="code-type">Greeting</span>.propTypes = {\n' +
     '  name: <span class="code-type">React</span>.<span class="code-type">PropTypes</span>.string\n' +
     '};</code></pre>\n' +
-    '<p><code>React.PropTypes</code>&nbsp;将会设定一系列验证器，这些验证器用于确保组件接受到的参数（props）是指定的类型。比如上面的例子，当一个错误的类型被组件接收到，会有一段警告内容使通过console输出。<span\n' +
+    '<p> PropTypes将会设定一系列验证器，这些验证器用于确保组件接受到的参数（props）是指定的类型。比如上面的例子，当一个错误的类型被组件接收到，会有一段警告内容使通过console输出。<span\n' +
     '        style="color:#FF0000">propsTypes仅仅在开发模式下使用</span>。</p>\n' +
     '\n' +
-    '<h3 id="h3-2">React.PropTypes</h3>\n' +
+    '<h3 id="h3-2">PropTypes</h3>\n' +
     '<p>以下是各种验证器的示例：</p>\n' +
     '<pre class="javascript"><code class="language-javascript">MyComponent.propTypes = {\n' +
     '  <span class="code-comment"><span class="code-comment">// 指明每个传入参数的具体类型，传递的参数仅限于这些JavaScript的内置类型</span></span>\n' +
-    '  optionalArray: React.PropTypes.array,\n' +
-    '  optionalBool: React.PropTypes.bool,\n' +
-    '  optionalFunc: React.PropTypes.func,\n' +
-    '  optionalNumber: React.PropTypes.number,\n' +
-    '  optionalObject: React.PropTypes.object,\n' +
-    '  optionalString: React.PropTypes.string,\n' +
-    '  optionalSymbol: React.PropTypes.symbol,\n' +
+    '  optionalArray: PropTypes.array,\n' +
+    '  optionalBool: PropTypes.bool,\n' +
+    '  optionalFunc: PropTypes.func,\n' +
+    '  optionalNumber: PropTypes.number,\n' +
+    '  optionalObject: PropTypes.object,\n' +
+    '  optionalString: PropTypes.string,\n' +
+    '  optionalSymbol: PropTypes.symbol,\n' +
     '\n' +
     '  <span class="code-comment"><span class="code-comment">// number、string、element或者一个列表都是允许的</span></span>\n' +
-    '  optionalNode: React.PropTypes.node,\n' +
+    '  optionalNode: PropTypes.node,\n' +
     '\n' +
     '  <span class="code-comment"><span class="code-comment">// 接收一个React组件</span></span>\n' +
-    '  optionalElement: React.PropTypes.element,\n' +
+    '  optionalElement: PropTypes.element,\n' +
     '\n' +
     '  <span class="code-comment"><span class="code-comment">// 声明这个参数只接收某个对象(class)的实例，适用于传递一个对象作为配置参数的</span></span>\n' +
-    '  optionalMessage: React.PropTypes.instanceOf(Message),\n' +
+    '  optionalMessage: PropTypes.instanceOf(Message),\n' +
     '\n' +
     '  <span class="code-comment"><span class="code-comment">// 指定参数限定在多个对象之内</span></span>\n' +
-    '  optionalEnum: React.PropTypes.oneOf([<span class="code-string"><span class="code-string">\'News\'</span></span>, <span\n' +
+    '  optionalEnum: PropTypes.oneOf([<span class="code-string"><span class="code-string">\'News\'</span></span>, <span\n' +
     '            class="code-string"><span class="code-string">\'Photos\'</span></span>]),\n' +
     '\n' +
     '  <span class="code-comment"><span class="code-comment">// 指定参数允许多个类型</span></span>\n' +
-    '  optionalUnion: React.PropTypes.oneOfType([\n' +
-    '    React.PropTypes.string,\n' +
-    '    React.PropTypes.number,\n' +
-    '    React.PropTypes.instanceOf(Message)\n' +
+    '  optionalUnion: PropTypes.oneOfType([\n' +
+    '    PropTypes.string,\n' +
+    '    PropTypes.number,\n' +
+    '    PropTypes.instanceOf(Message)\n' +
     '  ]),\n' +
     '\n' +
     '  <span class="code-comment"><span class="code-comment">// 指定类型的列表</span></span>\n' +
-    '  optionalArrayOf: React.PropTypes.arrayOf(React.PropTypes.number),\n' +
+    '  optionalArrayOf: PropTypes.arrayOf(PropTypes.number),\n' +
     '\n' +
     '  <span class="code-comment"><span class="code-comment">// 指定传递某个类型，是一个对象不是数据本身</span></span>\n' +
-    '  optionalObjectOf: React.PropTypes.objectOf(React.PropTypes.number),\n' +
+    '  optionalObjectOf: PropTypes.objectOf(PropTypes.number),\n' +
     '\n' +
     '  <span class="code-comment"><span class="code-comment">// 指定传递参数的结构，适用于传递一个对象时限定对象的结构</span></span>\n' +
-    '  optionalObjectWithShape: React.PropTypes.shape({\n' +
-    '    color: React.PropTypes.string,\n' +
-    '    fontSize: React.PropTypes.number\n' +
+    '  optionalObjectWithShape: PropTypes.shape({\n' +
+    '    color: PropTypes.string,\n' +
+    '    fontSize: PropTypes.number\n' +
     '  }),\n' +
     '\n' +
     '  <span class="code-comment"><span class="code-comment">// 表明这个参数是必须要传递的参数，在使用这个组件时，这个参数必须传入数据</span></span>\n' +
-    '  requiredFunc: React.PropTypes.func.isRequired,\n' +
+    '  requiredFunc: PropTypes.func.isRequired,\n' +
     '\n' +
     '  <span class="code-comment"><span class="code-comment">// 允许任何类型的数据。</span></span>\n' +
-    '  requiredAny: React.PropTypes.any.isRequired,\n' +
+    '  requiredAny: PropTypes.any.isRequired,\n' +
     '\n' +
     '  <span class="code-comment"><span class="code-comment">// 指定一个自定义的检查器，当检查失败时需要返回一个Error对象来指明错误。</span></span>\n' +
     '  <span class="code-comment"><span class="code-comment">// 错误只需要返回，切记不能使用throw或console.warn输出</span></span>\n' +
@@ -102,7 +102,7 @@ export const content = '<h3 id="h3-1">使用PropTypes进行类型检查</h3>\n' 
     '\n' +
     '  <span class="code-comment"><span class="code-comment">// 用于检测一个数组传递的自定义检查器，适用于arrayOf和objectOf类型。</span></span>\n' +
     '  <span class="code-comment"><span class="code-comment">// 当出现检查错误时需要返回Error</span></span>\n' +
-    '  customArrayProp: React.PropTypes.arrayOf(<span class="hljs-function"><span class="code-keyword"><span\n' +
+    '  customArrayProp: PropTypes.arrayOf(<span class="hljs-function"><span class="code-keyword"><span\n' +
     '            class="hljs-function"><span class="code-keyword">function</span></span></span><span\n' +
     '            class="hljs-function">(</span><span class="hljs-params"><span class="hljs-function"><span\n' +
     '            class="hljs-params">propValue, key, componentName, location, propFullName</span></span></span><span\n' +
@@ -121,7 +121,7 @@ export const content = '<h3 id="h3-1">使用PropTypes进行类型检查</h3>\n' 
     '};</code></pre>\n' +
     '\n' +
     '<h4 id="h4-1">限定至少接收一个子元素</h4>\n' +
-    '<p>可以使用&nbsp;<code>React.PropTypes.element</code>&nbsp;来指明组件必须接收一个子元素：</p>\n' +
+    '<p>可以使用&nbsp;<code>PropTypes.element</code>&nbsp;来指明组件必须接收一个子元素：</p>\n' +
     '<pre class="scala"><code class="language-javascript"><span class="hljs-class"><span class="code-keyword"><span\n' +
     '        class="hljs-class"><span class="code-keyword">class</span></span></span><span class="hljs-class"> </span><span\n' +
     '        class="code-title"><span class="hljs-class"><span class="code-title">MyComponent</span></span></span><span\n' +

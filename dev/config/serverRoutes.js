@@ -1,8 +1,8 @@
 import clientRoutes from './clientRoutes'
-import {loadArticle} from '../src/article/articleAction'
-import {loadCategoryAction} from '../src/category/categoryAction'
-import {ShowType} from '../src/header/headerReducer'
-import {initRunLocalAction} from '../src/appAction'
+import {loadArticle} from './redux/articleAction'
+import {loadCategoryAction} from './redux/categoryAction'
+import {ShowType} from './redux/headerReducer'
+import {initRunLocalAction} from './redux/appAction'
 import {categoryTypeMap, categoryStructure, getArticlePrevNext} from '../data/category'
 import {getArticleUrl, getCategoryUrl} from '../config/url'
 

@@ -7,8 +7,11 @@ export const headerScrollAction = (showType) => ({
 })
 
 /**
- * 首页显示内容
- * @param icon 图标 {img:,color:}
+ * 头部内容条显示的内容
+ * @param icon 头部图标与颜色 {{
+ *  img:,
+ *  color:
+ *  }}
  * @param breadcrumb 导航 {title:,routes[{name,url}]}
  */
 export const headerShowAction = (icon, breadcrumb) => {

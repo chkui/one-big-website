@@ -120,7 +120,7 @@ No errors!
 <p>到这里，Flow已经算是安装成功了，接下来的事是要增加各种注解以加强类型限定或者参数检测。之后的内容将简要介绍flow的相关语法规则。</p>
 
 <h2 id="h2-6">React组件参数检查</h2>
-<p><a title="PropType参数类型检测" href="/article/react/react_typechecking_with_proptypes_and_dom_element">https://www.chkui.com/article/react/react_typechecking_with_proptypes_and_dom_element</a>介绍了React通过PropType机制限定使用者使用组件传递的参数类型以及范围，但是PropType是一种运行检测机制，在程序跑起来之后获取到具体数据才会执行检查。而Flow是静态检查，是在代码编译运行之前进行一次检查，两者相辅相成互不干扰。</p>
+<p><a title="PropType参数类型检测" href="https://chkui.com/article/react/react_typechecking_with_proptypes_and_dom_element">React组件参数检查</a>介绍了React通过PropType机制限定使用者使用组件传递的参数类型以及范围，但是PropType是一种运行检测机制，在程序跑起来之后获取到具体数据才会执行检查。而Flow是静态检查，是在代码编译运行之前进行一次检查，两者相辅相成互不干扰。</p>
 
 <h3 id="h3-4">Props参数检查</h3>
 <p>承接上面 MyComponent 的例子，我们引入Flow的注解对代码进行检查：</p>
@@ -205,7 +205,7 @@ Found <span class="hljs-number">3</span> errors</code></pre>
 </ul>
 
 <h3 id="h3-5">增加对State的检查</h3>
-<p>React的数据通过两处控制——<a title="React 深入说明JSX语法与Props特性" href="https://www.chkui.com/article/react/react_understand_jsx_and_props">props</a> 和&nbsp;<a title="React 状态、事件与动态渲染" href="https://www.chkui.com/article/react/react_state_event_and_render" rel="nofollow">state</a>。Flow也提供了state数据的检查，我们在例子中增加state检查：</p>
+<p>React的数据通过两处控制——<a title="React 深入说明JSX语法与Props特性" href="https://www.chkui.com/article/react/react_understand_jsx_and_props">props</a> 和&nbsp;<a title="React 状态、事件与动态渲染" href="https://www.chkui.com/article/react/react_state_event_and_render">state</a>。Flow也提供了state数据的检查，我们在例子中增加state检查：</p>
 <pre class="scala"><code class="language-javascript"><span class="code-comment"><span class="code-comment">// @flow</span></span>
 <span class="code-comment"><span class="code-comment">// flow的例子，可以看看和PropType的差异在哪</span></span>
 <span class="code-keyword"><span class="code-keyword">import</span></span> <span class="code-type">React</span> <span class="code-keyword">from</span> <span class="code-string"><span class="hljs-symbol">'reac</span>t'</span>

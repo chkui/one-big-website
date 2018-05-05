@@ -1,6 +1,6 @@
-import {headerScrollAction, headerShowAction} from "../header/headerAction";
+import {headerScrollAction, headerShowAction} from "./headerAction";
 import {categoryStructure, categoryTypeMap} from "../../data/category";
-import {flow} from "../common/flow";
+import {flow} from "../../src/common/flow";
 
 export const categoryTypeListAction = (type) => ({
     type: 'categoryTypeList',

@@ -4,7 +4,7 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import {faAngleUp} from '@fortawesome/fontawesome-free-solid'
 import {connect} from 'react-redux'
 import {isServerEvn} from 'pwfe-dom/util'
-import {ShowType} from '../../header/headerReducer'
+import {ShowType} from '../../../config/redux/headerReducer'
 
 const cn = require('classnames/bind').bind(require('./scrollToTop.scss'))
 
