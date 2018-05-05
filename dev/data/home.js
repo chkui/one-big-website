@@ -1,4 +1,5 @@
 export const homes = [
+    require('./articles/vertx/1_vertx_source_code_how_to_create_cluster'),
     require('./articles/react/7_react_static_type_check_with_flow'),
     require('./articles/react/6_react_typechecking_with_proptypes_and_dom_element'),
     require('./articles/react/5_react_understand_jsx_and_props'),

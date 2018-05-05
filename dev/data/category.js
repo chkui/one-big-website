@@ -89,7 +89,9 @@ export const categoryStructure = {
     java: {},
     hazelcast: {},
     spring: {},
-    vertx: {},
+    vertx: {
+        vertx_source_code_how_to_create_cluster: require('./articles/vertx/1_vertx_source_code_how_to_create_cluster')
+    },
     nginx: {},
     tensorflow: {},
     linux: {
