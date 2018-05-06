@@ -90,7 +90,8 @@ export const categoryStructure = {
     hazelcast: {},
     spring: {},
     vertx: {
-        vertx_source_code_how_to_create_cluster: require('./articles/vertx/1_vertx_source_code_how_to_create_cluster')
+        vertx_source_code_how_to_create_cluster: require('./articles/vertx/1_vertx_source_code_how_to_create_cluster'),
+        vertx_source_mongdb_config: require('./articles/vertx/2_vertx_source_mongdb_config')
     },
     nginx: {},
     tensorflow: {},

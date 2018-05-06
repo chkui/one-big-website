@@ -212,7 +212,7 @@ const _ServerRouteConfig = {
                         title = `${name}`,
                         description = `${name} ${category.des}`;
                     res({
-                        title: title,
+                        title: `${title} - 随风溜达的向日葵`,
                         keywords: `随风溜达的向日葵,软件开发技术分类,${name}`,
                         url: innerUrl,
                         description: description,

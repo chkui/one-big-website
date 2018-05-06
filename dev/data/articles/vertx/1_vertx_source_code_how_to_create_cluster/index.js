@@ -5,10 +5,10 @@ if (typeof require.ensure !== 'function') {
 }
 
 const article = {
-    subject: 'Vertx 如何创建集群',
+    subject: 'Vert.x 如何创建集群',
     shortSubject: '如何创建集群',
     image: 'https://file.mahoooo.com/res/file/react_establish_development_environment_2.png',
-    en_subject: 'Vertx: How To Create Cluster',
+    en_subject: 'Vert.x: How To Create Cluster',
     category: 'vertx',
     tag: ['Vertx', 'Java'],
     url: 'vertx_source_code_how_to_create_cluster',
