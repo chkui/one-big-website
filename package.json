@@ -19,7 +19,7 @@
     "mirror-stop": "pm2 stop ./site/pm2/mirror.config.js & pm2 delete ./site/pm2/mirror.config.js",
     "stop": "pm2 stop ./site/pm2/pro.config.js & pm2 delete ./site/pm2/pro.config.js",
     "flow": "flow",
-    "clean": "rimraf ./log/"
+    "clean": "rimraf ./site/dist/* ./dev/dist/index.html ./logs"
   },
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.7",
