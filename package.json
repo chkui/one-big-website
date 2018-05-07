@@ -9,6 +9,8 @@
     "test-build": "cross-env NODE_ENV=test NODE_BUILDER=TEST  node ./site/server/builder.js  --watch server --watch build",
     "build-mirror": "cross-env NODE_ENV=production NODE_BUILDER=MIR node ./site/server/builder.js  --watch server --watch build",
     "build": "cross-env NODE_ENV=production NODE_BUILDER=PRO node ./site/server/builder.js --watch server --watch build",
+    "copy": "sh ./builder/copy-site.sh",
+    "publish": "npm run build && npm run copy",
     "test-start": "pm2 start ./site/pm2/test.config.js",
     "mirror-start": "pm2 start ./site/pm2/mirror.config.js",
     "start": "pm2 start ./site/pm2/pro.config.js",
@@ -17,7 +19,7 @@
     "mirror-stop": "pm2 stop ./site/pm2/mirror.config.js & pm2 delete ./site/pm2/mirror.config.js",
     "stop": "pm2 stop ./site/pm2/pro.config.js & pm2 delete ./site/pm2/pro.config.js",
     "flow": "flow",
-    "clean": "rimraf ./site/dist/* ./log/* ./dev/dist/index.html"
+    "clean": "rimraf ./log/"
   },
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.7",

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie6 lazy " lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie7 lazy " lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie8 lazy " lang="en"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="ie9 lazy " lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="applicable-device" content="pc,mobile">
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+        <title><%- title %></title>
+        <% if (typeof(url) !== 'undefined') { %><link rel="canonical" href="<%- url %>"/><% }%>
+        <% if (typeof(robots) !== 'undefined') { %><meta name="robots" content="<%- robots %>"/><% }%>
+        <% if (typeof(keywords) !== 'undefined') { %><meta name="keywords" content="<%- keywords %>"/><% }%>
+        <% if (typeof(description) !== 'undefined') { %><meta name="description" content="<%- description %>"/><% }%>
+        <meta name="author" content="随风溜达的向日葵"/>
+        <meta property="og:locale" content="zh_CN"/>
+        <meta property="og:site_name" content="随风溜达的向日葵技术博客chkui"/>
+        <% if (typeof(title) !== 'undefined') { %><meta property="og:title" content="<%- title %>"/><% }%>
+        <% if (typeof(description) !== 'undefined') { %><meta property="og:description" content="<%- description %>"/><% }%>
+        <% if (typeof(pageType) !== 'undefined') { %><meta property="og:type" content="<%- pageType %>" /><% }%>
+        <% if (typeof(modifiedTime) !== 'undefined') { %><meta property="article:modified_time" content="<%- modifiedTime %>" /><% }%>
+        <% if (typeof(publishedTime) !== 'undefined') { %><meta property="article:published_time" content="<%- publishedTime %>" /><% }%>
+        <meta name="baidu-site-verification" content="q37REhhYSH" />
+        <% if (typeof(prev) !== 'undefined') { %><link rel='prev' href='<%- prev %>' /><% }%>
+        <% if (typeof(next) !== 'undefined') { %><link rel='next' href='<%- next %>' /><% }%>
+        <% if (typeof(ldjson) !== 'undefined') { %>
+        <script type="application/ld+json">
+        <%- ldjson  %>
+        </script>
+        <% }%>
+        <!-- icon -->
+        <link rel="icon" href="https://file.mahoooo.com/res/file/chkui-website-favicon-32.ico" sizes="32x32">
+        <link rel="icon" href="https://file.mahoooo.com/res/file/chkui-website-favicon-48.ico" sizes="48x48">
+        <link rel="icon" href="https://file.mahoooo.com/res/file/chkui-website-favicon-64.ico" sizes="64x64">
+        <link rel="icon" href="https://file.mahoooo.com/res/file/chkui-website-favicon-128.ico" sizes="128x128">
+    <link href="/161b8ffcd5.css" rel="stylesheet"></head>
+    <body>
+        <div id="root"><%- root %></div>
+        <div id="modal-root"></div>
+        <script>
+            window.REDUX_STATE = <%- JSON.stringify(state) %>;
+            window.SERVER_PARAMS = <%- JSON.stringify(params) %>
+        </script>
+        <script type="text/javascript" src="/baidu-push-link.js"></script>
+    <script type="text/javascript" src="/18fc14ae19.js"></script><script type="text/javascript" src="/16fc14ae19.js"></script><script type="text/javascript" src="/1707190aec.js"></script></body>
+</html>
