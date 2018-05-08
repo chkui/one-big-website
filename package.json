@@ -28,16 +28,15 @@
     "@fortawesome/fontawesome-free-solid": "^5.0.12",
     "@fortawesome/fontawesome-free-webfonts": "^1.0.8",
     "@fortawesome/react-fontawesome": "0.0.17",
-    "cookies-js": "^1.2.3",
-    "cross-env": "^3.2.4",
     "full-rich-text-process": "^1.0.3",
-    "node-noop": "^1.0.0",
-    "pm2": "^2.10.3",
+    "jquery": "^3.3.1",
     "pwfe-dom": "^1.0.24",
-    "pwfe-server": "^2.0.1",
-    "rsimditor": "^1.0.3"
+    "pwfe-server": "^2.0.1"
   },
   "devDependencies": {
+    "cross-env": "^3.2.4",
+    "node-noop": "^1.0.0",
+    "pm2": "^2.10.3",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^3.12.2",
     "eslint-plugin-react": "^6.8.0",
