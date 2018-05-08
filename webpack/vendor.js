@@ -7,7 +7,7 @@
  * @type {string[]}
  */
 const vendor = [
-    'cookies-js',
+    'jquery',
     'classnames',
     'classnames/bind',
     'react',

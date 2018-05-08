@@ -26,4 +26,8 @@
         <loc>https://www.chkui.com/sitemap-article-vertx.xml</loc>
         <lastmod>2018-05-06T01:53:21+00:00</lastmod>
     </sitemap>
+    <sitemap>
+        <loc>https://www.chkui.com/sitemap-article-hazelcast.xml</loc>
+        <lastmod>2018-05-08T15:53:21+00:00</lastmod>
+    </sitemap>
 </sitemapindex>
