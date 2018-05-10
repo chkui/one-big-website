@@ -135,10 +135,41 @@
   -webkit-transition: height 500ms ease;
   transition: height 500ms ease; }
 ._1CpqgFLh {
+  position: fixed;
+  top: 0;
   height: 100%; }
   @media screen and (max-width: 680px) {
     ._1CpqgFLh {
       display: none; } }
+
+.Mc3_rMpE {
+  height: 5.5rem; }
+
+.v2oUEof0 {
+  height: 5.5rem;
+  -webkit-transition: height 500ms ease;
+  transition: height 500ms ease; }
+
+._2Kc8w8Ny {
+  height: 3.5rem;
+  -webkit-transition: height 500ms ease;
+  transition: height 500ms ease; }
+
+._1AvIwKUL {
+  height: 76%;
+  overflow-y: auto; }
+  ._1AvIwKUL::-webkit-scrollbar-thumb {
+    height: 5px;
+    border: 1px solid transparent;
+    border-top: none;
+    border-bottom: none;
+    -webkit-border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-clip: padding-box; }
+  ._1AvIwKUL::-webkit-scrollbar {
+    width: 10px !important;
+    height: 10px !important;
+    -webkit-appearance: none; }
 
 ._3Ifcx1H6 {
   margin: .2rem 0;

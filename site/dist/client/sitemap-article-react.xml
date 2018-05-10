@@ -59,4 +59,18 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
+    <url>
+        <loc>https://www.chkui.com/article/react/react_optimizing_performance</loc>
+        <mobile:mobile type="pc,mobile"/>
+        <lastmod>2018-05-10T10:26:26+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.chkui.com/article/react/react_without_jsx_and_es6</loc>
+        <mobile:mobile type="pc,mobile"/>
+        <lastmod>2018-05-10T10:26:26+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>
