@@ -87,4 +87,18 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
+    <url>
+        <loc>https://www.chkui.com/article/react/react_web_component</loc>
+        <mobile:mobile type="pc,mobile"/>
+        <lastmod>2018-05-14T17:56:11+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.chkui.com/article/react/react_high_order_component</loc>
+        <mobile:mobile type="pc,mobile"/>
+        <lastmod>2018-05-14T17:56:11+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>
