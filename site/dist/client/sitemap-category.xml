@@ -31,4 +31,11 @@
         <changefreq>weekly</changefreq>
         <priority>0.3</priority>
     </url>
+    <url>
+        <loc>https://www.chkui.com/category/tensorflow</loc>
+        <mobile:mobile type="pc,mobile"/>
+        <lastmod>2018-05-24T21:53:21+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.3</priority>
+    </url>
 </urlset>
