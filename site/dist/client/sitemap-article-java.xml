@@ -10,4 +10,18 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
+    <url>
+        <loc>https://www.chkui.com/article/java/java_lambda_optional_for_null</loc>
+        <mobile:mobile type="pc,mobile"/>
+        <lastmod>2018-06-12T08:45:50+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.chkui.com/article/java/java_jsr330</loc>
+        <mobile:mobile type="pc,mobile"/>
+        <lastmod>2018-06-12T08:45:50+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>
