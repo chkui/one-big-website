@@ -46,4 +46,8 @@
         <loc>https://www.chkui.com/sitemap-article-jolokia.xml</loc>
         <lastmod>2018-06-20T08:53:21+00:00</lastmod>
     </sitemap>
+    <sitemap>
+        <loc>https://www.chkui.com/sitemap-article-spring.xml</loc>
+        <lastmod>2018-06-12T10:53:21+00:00</lastmod>
+    </sitemap>
 </sitemapindex>
