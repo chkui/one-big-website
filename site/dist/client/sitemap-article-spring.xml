@@ -6,7 +6,14 @@
     <url>
         <loc>https://www.chkui.com/article/spring/spring_annotation_of_xml_configuration</loc>
         <mobile:mobile type="pc,mobile"/>
-        <lastmod>2018-06-12T10:53:21+00:00</lastmod>
+        <lastmod>2018-06-21T10:53:21+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.chkui.com/article/spring/spring_boot_features_get_started</loc>
+        <mobile:mobile type="pc,mobile"/>
+        <lastmod>2018-06-22T10:53:21+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
