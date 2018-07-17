@@ -69,7 +69,7 @@
     <url>
         <loc>https://www.chkui.com/article/spring/spring_core_ioc_extension_points</loc>
         <mobile:mobile type="pc,mobile"/>
-        <lastmod>2018-07-06T11:53:21+00:00</lastmod>
+        <lastmod>2018-07-17T15:53:21+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
@@ -84,6 +84,13 @@
         <loc>https://www.chkui.com/article/spring/spring_core_factory_post_processor_of_official</loc>
         <mobile:mobile type="pc,mobile"/>
         <lastmod>2018-07-16T10:53:21+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.chkui.com/article/spring/spring_core_auto_inject_of_annotation</loc>
+        <mobile:mobile type="pc,mobile"/>
+        <lastmod>2018-07-17T15:53:21+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
