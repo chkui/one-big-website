@@ -31,4 +31,11 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
+    <url>
+        <loc>https://www.chkui.com/article/vertx/database_desgin_specification</loc>
+        <mobile:mobile type="pc,mobile"/>
+        <lastmod>2019-05-28T17:19:21+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>
