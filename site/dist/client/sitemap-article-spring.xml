@@ -199,4 +199,11 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
+    <url>
+        <loc>https://www.chkui.com/article/spring/spring_batch_job</loc>
+        <mobile:mobile type="pc,mobile"/>
+        <lastmod>2019-07-05T16:53:21+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>
